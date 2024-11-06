@@ -44,11 +44,14 @@
   display: flex;
   // 両端揃え
   justify-content: space-between;
-  // 内側上下
-  padding: vw(31) vw(31);
+  // 内側余白　上右下左
+  padding: vw(0);
 }
 
 .header__logo {
+  display: flex; /* ロゴ全体をフレックスボックスに設定 */
+  align-items: center; /* ロゴ画像を上下中央に配置 */
+  justify-content: center; /* ロゴの中央揃え */
   width: vw(187);
 
   a {
@@ -63,6 +66,18 @@
   }
 }
 
+.header__nav {
+  // 横並び
+  display: flex;
+  // 両端揃え
+  justify-content: center;
+  // 内側余白
+  margin-top: vw(0);
+  margin-right: auto;
+  // お申込みアイコン分余白
+  margin-right: vw(130);
+}
+
 .header__nav ul {
   // リストのスタイルをなくす
   list-style: none;
@@ -70,8 +85,9 @@
   display: flex;
   // 両端揃え
   justify-content: center;
+  // 間隔
   gap: vw(6);
-  padding: vw(16) vw(16);
+  // 　内側余白
 
   @include sp() {
     // スマホ版では表示しない
@@ -80,24 +96,48 @@
 }
 
 .header__nav li {
+  // 高さや幅が指定可能となる
+  display: flex;
+  // 横並び
+  justify-content: center;
+  // 上下中央揃え
+  align-items: center;
+  // ブロックレベル要素内のテキストを中央揃え
+  text-align: center;
   // リストのスタイルをなくす
   list-style: none;
-  // 高さや幅が指定可能となる
-  display: inline-block;
-  // 上下余白
-  padding: vw(10) vw(20);
+  // 下の余白
+  margin-bottom: vw(15);
+
+  // 横幅
+  width: vw(156);
+  // 高さ
+  height: vw(65);
+  // 内側上下余白
+  padding: vw(16) vw(16);
   // 丸み
   border-radius: vw(0) vw(0) vw(30) vw(30);
   // 背景色
   background: #ffa8a8;
   // 影
-  box-shadow: vw(0) vw(0) vw(20) vw(0);
+  box-shadow: vw(0) vw(0) vw(20) vw(0) rgba(0, 0, 0, 0.15);
   // フォントカラー
   color: #fff;
   // フォント
-  font-family: $font-family-ja;
+  font-family: "Heisei Maru Gothic Std";
   font-size: vw(16);
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
+}
+
+.header__nav li:nth-child(2) {
+  background: #29a6ce; /* ご利用者の声の背景色 */
+}
+
+.header__nav li:nth-child(3) {
+  background: #85c36f; /* 施設案内の背景色 */
+}
+.header__nav li:nth-child(4),
+.header__nav li:nth-child(5) {
+  background: #f7f3eb; /* ギャラリーとアクセスの背景色 */
+  color: #3b1800; /* ギャラリーとアクセスのフォントカラー */
 }
