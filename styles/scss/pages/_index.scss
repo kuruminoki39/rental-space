@@ -1,0 +1,103 @@
+@use "../base/variables" as *;
+@use "../base/functions" as *;
+@use "../base/mixins" as *;
+
+.body {
+  &.is-checked {
+    overflow: hidden;
+  }
+}
+
+.hidden-sp {
+  @include sp {
+    display: none;
+  }
+}
+.hidden-pc {
+  @include pc {
+    display: none;
+  }
+}
+.focus-none {
+  display: block;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.header {
+  // 全面に表示
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $color-beige;
+}
+
+.header__inner {
+  // 最大幅
+  width: vw(1280);
+  margin: auto;
+  // 横並び
+  display: flex;
+  // 両端揃え
+  justify-content: space-between;
+  // 内側上下
+  padding: vw(31) vw(31);
+}
+
+.header__logo {
+  width: vw(187);
+
+  a {
+    display: block;
+  }
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+}
+
+.header__nav ul {
+  // リストのスタイルをなくす
+  list-style: none;
+  // 横並び
+  display: flex;
+  // 両端揃え
+  justify-content: center;
+  gap: vw(6);
+  padding: vw(16) vw(16);
+
+  @include sp() {
+    // スマホ版では表示しない
+    display: none;
+  }
+}
+
+.header__nav li {
+  // リストのスタイルをなくす
+  list-style: none;
+  // 高さや幅が指定可能となる
+  display: inline-block;
+  // 上下余白
+  padding: vw(10) vw(20);
+  // 丸み
+  border-radius: vw(0) vw(0) vw(30) vw(30);
+  // 背景色
+  background: #ffa8a8;
+  // 影
+  box-shadow: vw(0) vw(0) vw(20) vw(0);
+  // フォントカラー
+  color: #fff;
+  // フォント
+  font-family: $font-family-ja;
+  font-size: vw(16);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}

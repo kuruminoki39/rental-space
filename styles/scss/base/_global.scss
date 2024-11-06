@@ -1,0 +1,31 @@
+@use "./variables" as *;
+@use "./functions" as *;
+@use "./mixins" as *;
+
+html {
+  font-size: 1.6667vw;
+}
+
+// 共通
+body {
+  position: relative;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-base-black;
+  font-family: $font-family-ja;
+  background: $color-key1;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}

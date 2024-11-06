@@ -1,0 +1,35 @@
+@import "https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;600&display=swap";
+
+// breakpoints
+$breakpoints: (
+  "sm": 640px,
+  "md": 768px,
+  "lg": 769px,
+  "xl": 1440px,
+);
+
+// design size
+$design-size: (
+  "pc-width": 1440,
+  "pc-height": 810,
+  "sp-width": 360,
+  "sp-height": 800,
+);
+
+// colors
+$color-brown: #3b1800;
+$color-pink: #ffa8a8;
+$color-blue: #29a6ce;
+$color-green: #85c36f;
+$color-beige: #f7f3eb;
+$color-beige2: #ede2da;
+
+// fonts
+$font-family-ja: "Heisei Maru Gothic", sans-serif;
+$font-family-en: "Heisei Maru Gothic", sans-serif;
+
+// inner spacing
+$width-inner: 1100px;
+
+// base styles
+$font-size-base: 16px;
