@@ -455,7 +455,6 @@ svg {
 }
 
 .header {
-  z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
@@ -588,4 +587,52 @@ svg {
   text-decoration: none; /* 下線を削除 */
   color: inherit; /* 色を継承 */
   border-radius: inherit; /* 丸みを継承 */
+}
+
+.header__icon {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12.8472222222vw;
+  height: 12.8472222222vw;
+}
+
+.fv {
+  padding-top: 5.5555555556vw;
+  background: #f7f3eb;
+}
+
+.fv__inner {
+  width: 88.8888888889vw;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 89.5833333333vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4.8611111111vw 4.8611111111vw 4.8611111111vw 4.8611111111vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper {
+  width: auto;
+  margin-inline: auto;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: ""; /*contentを空にする*/
 }

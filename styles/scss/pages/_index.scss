@@ -27,11 +27,12 @@
 
 .header {
   // 全面に表示
-  z-index: 1000;
+  // z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+
   box-sizing: border-box;
   background-color: $color-beige;
 }
@@ -156,4 +157,56 @@
   text-decoration: none; /* 下線を削除 */
   color: inherit; /* 色を継承 */
   border-radius: inherit; /* 丸みを継承 */
+}
+
+.header__icon {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: vw(185);
+  height: vw(185);
+}
+// fv
+.fv {
+  padding-top: vw(80);
+  background: $color-beige;
+}
+.fv__inner {
+  // 最大幅
+  width: vw(1280);
+  //
+  margin: auto;
+}
+
+// swiper
+.wrapper {
+  max-width: vw(1290);
+  margin-left: auto;
+  margin-right: auto;
+  // margin-block: 50px;
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: vw(70) vw(70) vw(70) vw(70);
+    //親要素からのはみ出しを防ぐ
+    object-fit: contain;
+  }
+}
+
+.swiper {
+  width: auto;
+  margin-inline: auto;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: ""; /*contentを空にする*/
 }
