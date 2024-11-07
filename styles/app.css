@@ -626,6 +626,7 @@ svg {
 .swiper {
   width: auto;
   margin-inline: auto;
+  position: relative;
 }
 
 .swiper-slide {
@@ -635,4 +636,8 @@ svg {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: ""; /*contentを空にする*/
+}
+
+.swiper-pagination {
+  bottom: -2.5vw !important;
 }

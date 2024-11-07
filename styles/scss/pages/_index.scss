@@ -200,6 +200,7 @@
 .swiper {
   width: auto;
   margin-inline: auto;
+  position: relative;
 }
 
 .swiper-slide {
@@ -209,4 +210,8 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: ""; /*contentを空にする*/
+}
+
+.swiper-pagination {
+  bottom: vw(-36) !important;
 }
