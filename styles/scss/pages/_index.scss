@@ -96,6 +96,7 @@
 }
 
 .header__nav li {
+  position: relative;
   // 高さや幅が指定可能となる
   display: flex;
   // 横並び
@@ -140,4 +141,19 @@
 .header__nav li:nth-child(5) {
   background: #f7f3eb; /* ギャラリーとアクセスの背景色 */
   color: #3b1800; /* ギャラリーとアクセスのフォントカラー */
+}
+
+.header__nav a {
+  /* クリック可能範囲を広げる */
+  position: absolute; /* 親要素(li)全体を覆う */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* テキストを中央に配置 */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* 下線を削除 */
+  color: inherit; /* 色を継承 */
+  border-radius: inherit; /* 丸みを継承 */
 }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;600&display=swap";
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -530,6 +529,7 @@ svg {
 }
 
 .header__nav li {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,4 +567,25 @@ svg {
 .header__nav li:nth-child(5) {
   background: #f7f3eb; /* ギャラリーとアクセスの背景色 */
   color: #3b1800; /* ギャラリーとアクセスのフォントカラー */
+}
+
+.header__nav a {
+  /* クリック可能範囲を広げる */
+  position: absolute; /* 親要素(li)全体を覆う */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* テキストを中央に配置 */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none; /* 下線を削除 */
+  color: inherit; /* 色を継承 */
+  border-radius: inherit; /* 丸みを継承 */
 }
