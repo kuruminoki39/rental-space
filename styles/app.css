@@ -520,6 +520,7 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.4166666667vw;
+  margin-bottom: 1.0416666667vw;
 }
 @media screen and (max-width: 768px) {
   .header__nav ul {
@@ -528,7 +529,6 @@ svg {
 }
 
 .header__nav li {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,16 +540,14 @@ svg {
           align-items: center;
   text-align: center;
   list-style: none;
-  margin-bottom: 1.0416666667vw;
   width: 10.8333333333vw;
   height: 4.5138888889vw;
-  padding: 1.1111111111vw 1.1111111111vw;
   border-radius: 0vw 0vw 2.0833333333vw 2.0833333333vw;
   background: #ffa8a8;
   -webkit-box-shadow: 0vw 0vw 1.3888888889vw 0vw rgba(0, 0, 0, 0.15);
           box-shadow: 0vw 0vw 1.3888888889vw 0vw rgba(0, 0, 0, 0.15);
   color: #fff;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
   font-size: 1.1111111111vw;
   font-weight: 800;
 }
@@ -569,24 +567,8 @@ svg {
 }
 
 .header__nav a {
-  /* クリック可能範囲を広げる */
-  position: absolute; /* 親要素(li)全体を覆う */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; /* テキストを中央に配置 */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none; /* 下線を削除 */
-  color: inherit; /* 色を継承 */
-  border-radius: inherit; /* 丸みを継承 */
+  padding: 1.1111111111vw 1.1111111111vw;
+  white-space: nowrap;
 }
 
 .header__icon {
@@ -600,20 +582,22 @@ svg {
 
 .fv {
   padding-top: 5.5555555556vw;
+  padding-bottom: 8.6805555556vw;
   background: #f7f3eb;
 }
 
 .fv__inner {
   width: 88.8888888889vw;
   margin: auto;
+  position: relative;
 }
 
-.wrapper {
+.fv__wrapper {
   max-width: 89.5833333333vw;
   margin-left: auto;
   margin-right: auto;
 }
-.wrapper img {
+.fv__wrapper img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -640,4 +624,351 @@ svg {
 
 .swiper-pagination {
   bottom: -2.5vw !important;
+}
+
+.swiper-pagination-bullet {
+  width: 0.625vw;
+  height: 0.625vw;
+  background: url(../images/fv/icon-non-active.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+}
+
+.swiper-pagination-bullet-active {
+  width: 0.625vw;
+  height: 0.625vw;
+  background: url(../images/fv/icon-active.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+}
+
+.fv__bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 30.4166666667vw;
+}
+
+.fv__text {
+  position: absolute;
+  top: 31.0416666667vw;
+  z-index: 1000;
+}
+
+.fv__title {
+  color: #3b1800;
+  text-align: left;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-weight: 800;
+  font-size: 2.0833333333vw;
+  line-height: 160%; /* 127.778% */
+  letter-spacing: 0.0108em;
+  margin-bottom: 1.3888888889vw;
+}
+
+.fv__sub-title {
+  position: absolute;
+  white-space: nowrap;
+  color: #3b1800;
+  font-family: "Noto sans jp";
+  font-size: 0.9722222222vw;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.0128em;
+}
+
+.schedule {
+  background-color: #f7f3eb;
+}
+
+.schedule__inner {
+  width: 88.8888888889vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.schedule__title {
+  color: #3b1800;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.schedule__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
+}
+
+.calender {
+  margin: auto;
+  width: 43.0555555556vw;
+}
+.calender img {
+  width: 100%;
+  height: auto;
+}
+
+.scene {
+  background-color: #ffa8a8;
+}
+
+.scene__inner {
+  width: 76.3888888889vw;
+  padding-top: 10.9722222222vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scene__title {
+  color: #3b1800;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.scene__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
+}
+
+.scene__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.7361111111vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* 水平方向の中央揃え */
+  margin: 0 auto; /* 左右中央に配置 */
+  padding: 0; /* 必要に応じてパディングを調整 */
+  padding-bottom: 6.9444444444vw;
+}
+
+.scene__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  padding: 0.6944444444vw 0.6944444444vw 0.6944444444vw;
+  border-radius: 4.1666666667vw 4.1666666667vw 4.1666666667vw 4.1666666667vw;
+  height: auto;
+}
+.scene__list-item img {
+  width: 22.9166666667vw;
+}
+
+.scene__list-item--picture {
+  margin-bottom: 1.3888888889vw;
+}
+
+.scene__list-item--contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18.8888888889vw;
+  margin: auto;
+}
+
+.scene__list-item--number {
+  color: #ffa8a8;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 140%; /* 56px */
+}
+
+.scene__list-item--text {
+  color: #ffa8a8;
+  font-family: "Noto sans jp";
+  font-size: 1.3888888889vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.1111111111vw;
+}
+
+.scene__list-item--description {
+  color: #3b1800;
+  font-family: "Noto sans jp";
+  font-size: 0.9722222222vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.0777777778vw;
+  margin-top: 1.1111111111vw;
+  margin-bottom: 4.5833333333vw;
+}
+
+.voice {
+  background-color: #29a6ce;
+}
+
+.voice__inner {
+  width: 87.5vw;
+  margin-left: auto;
+}
+
+.voice__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 13.8888888889vw;
+  gap: 2.7777777778vw;
+}
+
+.voice__vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4305555556vw;
+}
+
+.voice__vertical--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.voice__title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #3b1800;
+  text-align: center;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.1944444444vw; /* 115% */
+}
+
+.voice__subtitle {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #3b1800;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: 1.3888888889vw;
+  font-weight: 400;
+  line-height: 3.4722222222vw; /* 250% */
+}
+
+.voice__vertical--arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4166666667vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.voice__vertical--arrow img {
+  width: 2.2916666667vw;
+  height: 2.2916666667vw;
+}
+
+.voice__container {
+  position: relative;
+  width: 100%; /* コンテナ全体の幅 */
+}
+
+.voice__slide-wrapper {
+  position: relative;
+  overflow: hidden; /* 左側を隠すために使用 */
+  width: 100%;
+}
+
+.voice__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* スライド時のアニメーション */
+  margin-right: -20px; /* 右側がはみ出すために余白を設定 */
+}
+
+.card {
+  min-width: 300px; /* カードの幅 */
+  height: 200px;
+  margin-right: 20px; /* カード間のスペース */
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voice__vertical--arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.1666666667vw;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
 }

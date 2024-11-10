@@ -89,6 +89,7 @@
   // 間隔
   gap: vw(6);
   // 　内側余白
+  margin-bottom: vw(15);
 
   @include sp() {
     // スマホ版では表示しない
@@ -97,7 +98,7 @@
 }
 
 .header__nav li {
-  position: relative;
+  // position: relative;
   // 高さや幅が指定可能となる
   display: flex;
   // 横並び
@@ -109,14 +110,10 @@
   // リストのスタイルをなくす
   list-style: none;
   // 下の余白
-  margin-bottom: vw(15);
 
   // 横幅
   width: vw(156);
-  // 高さ
   height: vw(65);
-  // 内側上下余白
-  padding: vw(16) vw(16);
   // 丸み
   border-radius: vw(0) vw(0) vw(30) vw(30);
   // 背景色
@@ -126,7 +123,7 @@
   // フォントカラー
   color: #fff;
   // フォント
-  font-family: "Heisei Maru Gothic Std";
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
   font-size: vw(16);
   font-weight: 800;
 }
@@ -145,18 +142,8 @@
 }
 
 .header__nav a {
-  /* クリック可能範囲を広げる */
-  position: absolute; /* 親要素(li)全体を覆う */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex; /* テキストを中央に配置 */
-  justify-content: center;
-  align-items: center;
-  text-decoration: none; /* 下線を削除 */
-  color: inherit; /* 色を継承 */
-  border-radius: inherit; /* 丸みを継承 */
+  padding: vw(16) vw(16);
+  white-space: nowrap;
 }
 
 .header__icon {
@@ -170,6 +157,7 @@
 // fv
 .fv {
   padding-top: vw(80);
+  padding-bottom: vw(125);
   background: $color-beige;
 }
 .fv__inner {
@@ -177,10 +165,11 @@
   width: vw(1280);
   //
   margin: auto;
+  position: relative;
 }
 
 // swiper
-.wrapper {
+.fv__wrapper {
   max-width: vw(1290);
   margin-left: auto;
   margin-right: auto;
@@ -213,5 +202,311 @@
 }
 
 .swiper-pagination {
+  // 丸を外に表示
   bottom: vw(-36) !important;
+}
+
+// ページネーション非アクティブ時
+.swiper-pagination-bullet {
+  width: vw(9);
+  height: vw(9);
+  background: url(../images/fv/icon-non-active.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+}
+
+// ページネーションアクティブ時
+.swiper-pagination-bullet-active {
+  width: vw(9);
+  height: vw(9);
+  background: url(../images/fv/icon-active.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+}
+
+.fv__bg {
+  // fv__innerに対して絶対配置
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: vw(438);
+}
+
+.fv__text {
+  // fv__innerに対して絶対配置
+  position: absolute;
+  top: vw(447);
+  z-index: 1000;
+}
+.fv__title {
+  color: $color-brown;
+  text-align: left;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+
+  font-weight: 800;
+  font-size: vw(30);
+  line-height: 160%; /* 127.778% */
+  letter-spacing: 0.0108em;
+  margin-bottom: vw(20);
+}
+
+.fv__sub-title {
+  position: absolute;
+  white-space: nowrap;
+  color: $color-brown;
+  font-family: "Noto sans jp";
+  font-size: vw(14);
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.0128em;
+}
+
+// schedule
+.schedule {
+  background-color: $color-beige;
+}
+
+.schedule__bg {
+}
+
+.schedule__inner {
+  width: vw(1280);
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.schedule__title {
+  color: $color-brown;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.schedule__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+
+  margin-bottom: vw(30);
+}
+
+.calender {
+  margin: auto;
+  width: vw(620);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// scene
+.scene {
+  background-color: $color-pink;
+}
+
+.scene__inner {
+  width: vw(1100);
+  padding-top: vw(158);
+
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scene__title {
+  color: $color-brown;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.scene__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+
+  margin-bottom: vw(30);
+}
+
+.scene__list {
+  display: flex;
+  gap: vw(25);
+  justify-content: center; /* 水平方向の中央揃え */
+  margin: 0 auto; /* 左右中央に配置 */
+  padding: 0; /* 必要に応じてパディングを調整 */
+  padding-bottom: vw(100);
+}
+
+.scene__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: vw(10) vw(10) vw(10);
+  border-radius: vw(60) vw(60) vw(60) vw(60);
+  height: auto;
+
+  img {
+    width: vw(330);
+  }
+}
+
+.scene__list-item--picture {
+  margin-bottom: vw(20);
+}
+.scene__list-item--contents {
+  display: flex;
+  flex-direction: column;
+
+  width: vw(272);
+  margin: auto;
+}
+.scene__list-item--number {
+  color: $color-pink;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: vw(40);
+
+  font-weight: 800;
+  line-height: 140%; /* 56px */
+}
+
+.scene__list-item--text {
+  color: $color-pink;
+  font-family: "Noto sans jp";
+  font-size: vw(20);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  letter-spacing: vw(1.6);
+}
+
+.scene__list-item--description {
+  color: $color-brown;
+  font-family: "Noto sans jp";
+  font-size: vw(14);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: vw(1.12);
+  margin-top: vw(16);
+  margin-bottom: vw(66);
+}
+
+// voice
+.voice {
+  background-color: $color-blue;
+}
+
+.voice__inner {
+  width: vw(1260);
+  // 右寄せ
+  margin-left: auto;
+}
+
+.voice__container {
+  display: flex;
+  padding-top: vw(200);
+  gap: vw(40);
+}
+
+.voice__vertical {
+  display: flex;
+  // 縦並び
+  flex-direction: column;
+  gap: vw(35);
+}
+
+.voice__vertical--text {
+  display: flex;
+  flex-direction: row;
+}
+
+.voice__title {
+  writing-mode: vertical-rl;
+  color: $color-brown;
+  text-align: center;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(46); /* 115% */
+}
+
+.voice__subtitle {
+  writing-mode: vertical-rl;
+  color: $color-brown;
+  font-family: "Heisei Maru Gothic Std";
+  font-size: vw(20);
+  font-weight: 400;
+  line-height: vw(50); /* 250% */
+}
+
+.voice__vertical--arrow {
+  display: flex;
+  gap: vw(6);
+  // 左右中央揃え
+  justify-content: center;
+
+  img {
+    width: vw(33);
+    height: vw(33);
+  }
+}
+.voice__container {
+  position: relative;
+  width: 100%; /* コンテナ全体の幅 */
+}
+
+.voice__slide-wrapper {
+  position: relative;
+  overflow: hidden; /* 左側を隠すために使用 */
+  width: 100%;
+}
+
+.voice__slide {
+  display: flex;
+  transition: transform 0.3s ease; /* スライド時のアニメーション */
+  margin-right: -20px; /* 右側がはみ出すために余白を設定 */
+}
+
+.card {
+  min-width: 300px; /* カードの幅 */
+  height: 200px;
+  margin-right: 20px; /* カード間のスペース */
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voice__vertical--arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: vw(60);
+}
+
+.arrow {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
