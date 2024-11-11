@@ -853,6 +853,7 @@ svg {
   display: flex;
   padding-top: 13.8888888889vw;
   gap: 2.7777777778vw;
+  padding-bottom: 6.9444444444vw;
 }
 
 .voice__vertical {
@@ -932,26 +933,32 @@ svg {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* スライド時のアニメーション */
-  margin-right: -20px; /* 右側がはみ出すために余白を設定 */
 }
 
-.card {
-  min-width: 300px; /* カードの幅 */
-  height: 200px;
-  margin-right: 20px; /* カード間のスペース */
-  background-color: #f4f4f4;
+.voice__slide--card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 20.1388888889vw !important; /* カードの幅 */
+  height: auto;
+  margin-right: 1.7361111111vw; /* カード間のスペース */
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4.8611111111vw;
+  padding: 2.0833333333vw;
+  gap: 1.1111111111vw;
 }
 
 .voice__vertical--arrow {
@@ -969,6 +976,154 @@ svg {
 
 .arrow {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 1.6666666667vw;
+  height: w(24);
+}
+
+.voice__slide--card-img {
+  width: 7.1527777778vw;
+}
+.voice__slide--card-img img {
+  width: 100%;
+}
+
+.voice__slide--card-text-title {
+  color: #29a6ce;
+  font-family: "Noto sans jp";
+  font-size: 1.3888888889vw;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.1111111111vw;
+}
+
+.voice__slide--card-text-description {
+  color: #3b1800;
+  font-family: "Noto sans jp";
+  font-size: 0.9722222222vw;
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.0112em;
+}
+
+.voice__slide--card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.1111111111vw;
+}
+
+.information {
+  background-color: #85c36f;
+}
+
+.information__inner {
+  width: 76.3888888889vw;
+  padding-top: 10.9722222222vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.information__title {
+  color: #3b1800;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.information__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
+}
+
+.information__card--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.0833333333vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 6.9444444444vw;
+}
+
+.information__card {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 37.2916666667vw !important;
+  padding: 2.0833333333vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.0833333333vw;
+  border-radius: 4.1666666667vw;
+}
+
+.information__card--title {
+  background-color: #85c36f;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 32.6388888889vw;
+  height: 2.9861111111vw;
+  padding: 0.4861111111vw 8.4722222222vw;
+  border-radius: 4.1666666667vw;
+  color: #fff;
+  font-family: "Noto sans jp";
+  font-size: 1.3888888889vw;
+  font-weight: 600;
+  line-height: 2.0833333333vw; /* 150% */
+  letter-spacing: 0.1111111111vw;
+}
+
+.information__card--table {
+  border-collapse: collapse;
+}
+
+.information__card--text1 {
+  padding: 0.6944444444vw 0vw;
+  color: #3b1800;
+  text-align: left;
+  font-family: "Noto sans jp";
+  font-size: 1.1111111111vw;
+  font-weight: 600;
+  line-height: 1.6666666667vw; /* 150% */
+  letter-spacing: VW(1.28);
+  border-bottom: 1px solid #ede2da;
+}
+
+.information__card--text2 {
+  color: #3b1800;
+  font-family: "Noto sans jp";
+  font-size: 0.6944444444vw;
+  font-weight: 300;
+  line-height: 1.1111111111vw; /* 160% */
+  letter-spacing: 0.0555555556vw;
 }

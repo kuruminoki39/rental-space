@@ -425,6 +425,7 @@
   display: flex;
   padding-top: vw(200);
   gap: vw(40);
+  padding-bottom: vw(100);
 }
 
 .voice__vertical {
@@ -483,19 +484,26 @@
 .voice__slide {
   display: flex;
   transition: transform 0.3s ease; /* スライド時のアニメーション */
-  margin-right: -20px; /* 右側がはみ出すために余白を設定 */
+  // margin-right: vw(-800); /* 右側がはみ出すために余白を設定 */
 }
 
-.card {
-  min-width: 300px; /* カードの幅 */
-  height: 200px;
-  margin-right: 20px; /* カード間のスペース */
-  background-color: #f4f4f4;
+.voice__slide--card {
+  //
+  //
+  // 幅伸ばさない、縮めない、指定サイズで表示
+  flex: 0 0 auto;
+  // vwだと広がりすぎるのでpx指定とした
+  width: vw(290) !important; /* カードの幅 */
+  height: auto;
+  margin-right: vw(25); /* カード間のスペース */
+  background-color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: vw(70);
+  padding: vw(30);
+  gap: vw(16);
 }
 
 .voice__vertical--arrow {
@@ -507,6 +515,134 @@
 
 .arrow {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: vw(24);
+  height: w(24);
+}
+
+.voice__slide--card-img {
+  width: vw(103);
+
+  img {
+    width: 100%;
+  }
+}
+
+.voice__slide--card-text-title {
+  color: $color-blue;
+  font-family: "Noto sans jp";
+  font-size: vw(20);
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  letter-spacing: vw(1.6);
+}
+.voice__slide--card-text-description {
+  color: $color-brown;
+  font-family: "Noto sans jp";
+  font-size: vw(14);
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.0112em;
+}
+
+.voice__slide--card-text {
+  display: flex;
+  flex-direction: column;
+  gap: vw(16);
+}
+
+// information
+.information {
+  background-color: $color-green;
+}
+.information__inner {
+  width: vw(1100);
+  padding-top: vw(158);
+
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.information__title {
+  color: $color-brown;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.information__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+
+  margin-bottom: vw(30);
+}
+
+.information__card--container {
+  display: flex;
+  flex-direction: row;
+  gap: vw(30);
+  justify-content: center;
+  padding-bottom: vw(100);
+}
+.information__card {
+  background: #fff;
+  display: flex;
+  width: vw(537) !important;
+  padding: vw(30);
+  flex-direction: column;
+  align-items: center;
+  gap: vw(30);
+  border-radius: vw(60);
+}
+
+.information__card--title {
+  background-color: $color-green;
+  // 横並び中央寄せ
+  justify-content: center;
+  // 上下中央揃え
+  align-items: center;
+  // テキスト中央揃え
+  text-align: center;
+  width: vw(470);
+  height: vw(43);
+  padding: vw(7) vw(122);
+  border-radius: vw(60);
+  color: #fff;
+  font-family: "Noto sans jp";
+  font-size: vw(20);
+  font-weight: 600;
+  line-height: vw(30); /* 150% */
+  letter-spacing: vw(1.6);
+}
+
+.information__card--table {
+  //
+  border-collapse: collapse;
+}
+
+.information__card--text1 {
+  padding: vw(10) vw(0);
+  color: $color-brown;
+  text-align: left;
+  font-family: "Noto sans jp";
+  font-size: vw(16);
+  font-weight: 600;
+  line-height: vw(24); /* 150% */
+  letter-spacing: VW(1.28);
+  border-bottom: 1px solid #ede2da;
+}
+
+.information__card--text2 {
+  color: $color-brown;
+  font-family: "Noto sans jp";
+  font-size: vw(10);
+  font-weight: 300;
+  line-height: vw(16); /* 160% */
+  letter-spacing: vw(0.8);
 }

@@ -19,18 +19,22 @@ const swiper = new Swiper(".swiper", {
 });
 
 // voice
-// スライドコンテナと矢印要素を取得
+const slideWrapper = document.querySelector(".voice__slide-wrapper");
 const slideContainer = document.querySelector(".voice__slide");
+const cards = document.querySelectorAll(".voice__slide--card");
 const arrowLeft = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
 
-// 現在のスライド位置を管理
 let currentSlide = 0;
 
-// 1つのカードの幅（CSSで指定したものに一致させる）
-const cardWidth = 300 + 20; // カード幅(300px) + margin-right(20px)
+// カードの幅を取得
+const cardWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginRight);
 
-// 左矢印クリックイベント
+// スライダー全体の幅を計算
+const totalWidth = cardWidth * cards.length;
+slideContainer.style.width = `${totalWidth}px`;
+
+// 左矢印クリック
 arrowLeft.addEventListener("click", () => {
   if (currentSlide > 0) {
     currentSlide--;
@@ -38,12 +42,10 @@ arrowLeft.addEventListener("click", () => {
   }
 });
 
-// 右矢印クリックイベント
+// 右矢印クリック
 arrowRight.addEventListener("click", () => {
-  const totalCards = slideContainer.children.length; // カードの総数
-
-  // 最大スライド制限なしで右側にはみ出す
-  if (currentSlide < totalCards - 1) {
+  const maxSlide = cards.length - Math.floor(slideWrapper.offsetWidth / cardWidth);
+  if (currentSlide < maxSlide) {
     currentSlide++;
     slideContainer.style.transform = `translateX(-${cardWidth * currentSlide}px)`;
   }
