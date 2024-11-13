@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const fvSwiper = new Swiper(".fv__swiper", {
   // 画像同士の間隔
   spaceBetween: 20,
   // 画像の表示数
@@ -50,3 +50,5 @@ arrowRight.addEventListener("click", () => {
     slideContainer.style.transform = `translateX(-${cardWidth * currentSlide}px)`;
   }
 });
+
+// gallery

@@ -541,7 +541,6 @@ svg {
   text-align: center;
   list-style: none;
   width: 10.8333333333vw;
-  height: 4.5138888889vw;
   border-radius: 0vw 0vw 2.0833333333vw 2.0833333333vw;
   background: #ffa8a8;
   -webkit-box-shadow: 0vw 0vw 1.3888888889vw 0vw rgba(0, 0, 0, 0.15);
@@ -567,7 +566,7 @@ svg {
 }
 
 .header__nav a {
-  padding: 1.1111111111vw 1.1111111111vw;
+  padding: 1.7361111111vw 1.1111111111vw;
   white-space: nowrap;
 }
 
@@ -1112,11 +1111,15 @@ svg {
   color: #3b1800;
   text-align: left;
   font-family: "Noto sans jp";
-  font-size: 1.1111111111vw;
+  font-size: 0.8333333333vw;
   font-weight: 600;
   line-height: 1.6666666667vw; /* 150% */
   letter-spacing: VW(1.28);
   border-bottom: 1px solid #ede2da;
+}
+
+.information__card--bottom {
+  padding: 0.6944444444vw 0vw;
 }
 
 .information__card--text2 {
@@ -1126,4 +1129,47 @@ svg {
   font-weight: 300;
   line-height: 1.1111111111vw; /* 160% */
   letter-spacing: 0.0555555556vw;
+}
+
+.information__card--left {
+  vertical-align: middle;
+  width: 30%;
+}
+
+.information__card--right {
+  vertical-align: middle;
+  width: 70%;
+}
+
+.gallery {
+  background-color: #fff;
+}
+
+.gallery__inner {
+  width: 76.3888888889vw;
+  padding-top: 10.9722222222vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery__title {
+  color: #3b1800;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.gallery__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
 }

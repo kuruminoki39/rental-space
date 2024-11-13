@@ -113,7 +113,7 @@
 
   // 横幅
   width: vw(156);
-  height: vw(65);
+  // height: vw(65);
   // 丸み
   border-radius: vw(0) vw(0) vw(30) vw(30);
   // 背景色
@@ -142,7 +142,7 @@
 }
 
 .header__nav a {
-  padding: vw(16) vw(16);
+  padding: vw(25) vw(16);
   white-space: nowrap;
 }
 
@@ -631,13 +631,16 @@
   color: $color-brown;
   text-align: left;
   font-family: "Noto sans jp";
-  font-size: vw(16);
+  font-size: vw(12);
   font-weight: 600;
   line-height: vw(24); /* 150% */
   letter-spacing: VW(1.28);
   border-bottom: 1px solid #ede2da;
 }
 
+.information__card--bottom {
+  padding: vw(10) vw(0);
+}
 .information__card--text2 {
   color: $color-brown;
   font-family: "Noto sans jp";
@@ -645,4 +648,47 @@
   font-weight: 300;
   line-height: vw(16); /* 160% */
   letter-spacing: vw(0.8);
+}
+
+.information__card--left {
+  vertical-align: middle;
+  width: 30%;
+}
+
+.information__card--right {
+  vertical-align: middle;
+  width: 70%;
+}
+
+// gallery
+
+.gallery {
+  background-color: #fff;
+}
+.gallery__inner {
+  width: vw(1100);
+  padding-top: vw(158);
+
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery__title {
+  color: $color-brown;
+  text-align: center;
+  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.gallery__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+  margin-bottom: vw(30);
 }
