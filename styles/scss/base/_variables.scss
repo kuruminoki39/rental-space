@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap";
+
 // breakpoints
 $breakpoints: (
   "sm": 640px,
@@ -15,6 +17,7 @@ $design-size: (
 );
 
 // colors
+$color-white: #fff;
 $color-brown: #3b1800;
 $color-pink: #ffa8a8;
 $color-blue: #29a6ce;
@@ -23,8 +26,9 @@ $color-beige: #f7f3eb;
 $color-beige2: #ede2da;
 
 // fonts
-$font-family-ja: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-$font-family-en: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
+$font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
+$font-family2: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
+$font-family3: "Noto sans jp", "sans-serif";
 
 // inner spacing
 $width-inner: 1100px;

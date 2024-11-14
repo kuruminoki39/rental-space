@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap";
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -546,7 +547,7 @@ svg {
   -webkit-box-shadow: 0vw 0vw 1.3888888889vw 0vw rgba(0, 0, 0, 0.15);
           box-shadow: 0vw 0vw 1.3888888889vw 0vw rgba(0, 0, 0, 0.15);
   color: #fff;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 1.1111111111vw;
   font-weight: 800;
 }
@@ -591,12 +592,12 @@ svg {
   position: relative;
 }
 
-.fv__wrapper {
+.fv__swiper {
   max-width: 89.5833333333vw;
   margin-left: auto;
   margin-right: auto;
 }
-.fv__wrapper img {
+.fv__swiper img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -616,13 +617,10 @@ svg {
   overflow: hidden;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  content: ""; /*contentを空にする*/
-}
-
 .swiper-pagination {
   bottom: -2.5vw !important;
+  position: absolute;
+  margin: 0 auto;
 }
 
 .swiper-pagination-bullet {
@@ -662,7 +660,7 @@ svg {
 .fv__title {
   color: #3b1800;
   text-align: left;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-weight: 800;
   font-size: 2.0833333333vw;
   line-height: 160%; /* 127.778% */
@@ -674,7 +672,7 @@ svg {
   position: absolute;
   white-space: nowrap;
   color: #3b1800;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 600;
   line-height: 160%; /* 25.6px */
@@ -697,7 +695,7 @@ svg {
 .schedule__title {
   color: #3b1800;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 3.4722222222vw; /* 125% */
@@ -706,7 +704,7 @@ svg {
 .schedule__subtitle {
   color: #3b1800;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
   line-height: 3.4722222222vw; /* 250% */
@@ -722,13 +720,16 @@ svg {
   height: auto;
 }
 
+.schedule__bottom {
+  width: 100%;
+}
+
 .scene {
   background-color: #ffa8a8;
 }
 
 .scene__inner {
   width: 76.3888888889vw;
-  padding-top: 10.9722222222vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -737,9 +738,10 @@ svg {
 }
 
 .scene__title {
+  margin-top: -3.4722222222vw;
   color: #3b1800;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 3.4722222222vw; /* 125% */
@@ -748,7 +750,7 @@ svg {
 .scene__subtitle {
   color: #3b1800;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
   line-height: 3.4722222222vw; /* 250% */
@@ -809,7 +811,7 @@ svg {
 
 .scene__list-item--number {
   color: #ffa8a8;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 140%; /* 56px */
@@ -817,7 +819,7 @@ svg {
 
 .scene__list-item--text {
   color: #ffa8a8;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-style: normal;
   font-weight: 600;
@@ -827,7 +829,7 @@ svg {
 
 .scene__list-item--description {
   color: #3b1800;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 0.9722222222vw;
   font-style: normal;
   font-weight: 300;
@@ -835,6 +837,10 @@ svg {
   letter-spacing: 0.0777777778vw;
   margin-top: 1.1111111111vw;
   margin-bottom: 4.5833333333vw;
+}
+
+.scene__bottom {
+  width: 100%;
 }
 
 .voice {
@@ -850,7 +856,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 13.8888888889vw;
+  padding-top: -13.8888888889vw;
   gap: 2.7777777778vw;
   padding-bottom: 6.9444444444vw;
 }
@@ -882,7 +888,7 @@ svg {
           writing-mode: vertical-rl;
   color: #3b1800;
   text-align: center;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 3.1944444444vw; /* 115% */
@@ -893,7 +899,7 @@ svg {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3b1800;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 400;
   line-height: 3.4722222222vw; /* 250% */
@@ -988,7 +994,7 @@ svg {
 
 .voice__slide--card-text-title {
   color: #29a6ce;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
   line-height: 140%; /* 28px */
@@ -997,7 +1003,7 @@ svg {
 
 .voice__slide--card-text-description {
   color: #3b1800;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%; /* 19.6px */
@@ -1014,6 +1020,9 @@ svg {
           flex-direction: column;
   gap: 1.1111111111vw;
 }
+.voice__slide--card-text .voice__bottom {
+  width: 100%;
+}
 
 .information {
   background-color: #85c36f;
@@ -1021,7 +1030,7 @@ svg {
 
 .information__inner {
   width: 76.3888888889vw;
-  padding-top: 10.9722222222vw;
+  padding-top: -13.8888888889vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1032,7 +1041,7 @@ svg {
 .information__title {
   color: #3b1800;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 3.4722222222vw; /* 125% */
@@ -1041,7 +1050,7 @@ svg {
 .information__subtitle {
   color: #3b1800;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
   line-height: 3.4722222222vw; /* 250% */
@@ -1060,7 +1069,6 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 6.9444444444vw;
 }
 
 .information__card {
@@ -1095,7 +1103,7 @@ svg {
   padding: 0.4861111111vw 8.4722222222vw;
   border-radius: 4.1666666667vw;
   color: #fff;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
   line-height: 2.0833333333vw; /* 150% */
@@ -1110,7 +1118,7 @@ svg {
   padding: 0.6944444444vw 0vw;
   color: #3b1800;
   text-align: left;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 600;
   line-height: 1.6666666667vw; /* 150% */
@@ -1124,7 +1132,7 @@ svg {
 
 .information__card--text2 {
   color: #3b1800;
-  font-family: "Noto sans jp";
+  font-family: "Noto sans jp", "sans-serif";
   font-size: 0.6944444444vw;
   font-weight: 300;
   line-height: 1.1111111111vw; /* 160% */
@@ -1141,13 +1149,18 @@ svg {
   width: 70%;
 }
 
+.information__bottom {
+  width: 100%;
+}
+
 .gallery {
   background-color: #fff;
 }
 
 .gallery__inner {
   width: 76.3888888889vw;
-  padding-top: 10.9722222222vw;
+  padding-top: 3.4722222222vw;
+  padding-bottom: 3.4722222222vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1158,7 +1171,7 @@ svg {
 .gallery__title {
   color: #3b1800;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 3.4722222222vw; /* 125% */
@@ -1167,9 +1180,275 @@ svg {
 .gallery__subtitle {
   color: #3b1800;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
   line-height: 3.4722222222vw; /* 250% */
   margin-bottom: 2.0833333333vw;
+}
+
+.gallery__swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.3888888889vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.3888888889vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__swiper-slide--img {
+  width: 14.9305555556vw;
+  height: 100%;
+}
+.gallery__swiper-slide--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.access {
+  background-color: #f7f3eb;
+}
+
+.access__inner {
+  width: 76.3888888889vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.access__title {
+  color: #3b1800;
+  margin-top: -4.8611111111vw;
+  text-align: center;
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.access__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
+}
+
+.access__map {
+  width: 76.3888888889vw;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  padding-bottom: 6.875vw;
+}
+
+.access__map iframe {
+  width: 100%; /* 親要素の幅に追従 */
+  height: 100%; /* 親要素の高さに追従 */
+  border: 0; /* 枠線を削除 */
+}
+
+.message {
+  background-color: #f7f3eb;
+}
+
+.message__inner {
+  width: 76.3888888889vw;
+  padding-bottom: 3.4722222222vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message__title {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
+  font-size: 2.7777777778vw;
+  font-weight: 800;
+  line-height: 3.4722222222vw; /* 125% */
+}
+
+.message__subtitle {
+  color: #3b1800;
+  text-align: center;
+  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  line-height: 3.4722222222vw; /* 250% */
+  margin-bottom: 2.0833333333vw;
+}
+
+.message__image {
+  width: 12.1527777778vw;
+  margin: 0 auto;
+}
+.message__image img {
+  width: 100%;
+}
+
+.message__text {
+  padding-top: 2.0833333333vw;
+  width: 27.0833333333vw;
+  height: auto;
+  margin: auto;
+}
+
+.message__text--description {
+  color: #3b1800;
+  font-family: "Noto sans jp", "sans-serif";
+  font-size: 0.9722222222vw;
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.0777777778vw;
+}
+
+.message__bottom {
+  width: 100%;
+}
+
+.footer {
+  background: #fea5a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* 水平方向の中央揃え */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* 垂直方向の中央揃え */
+}
+
+.footer__inner {
+  width: 88.8888888889vw;
+  margin-top: -3.4722222222vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* 水平方向の中央揃え */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* 垂直方向の中央揃え */
+}
+
+.footer__logo {
+  width: 11.1111111111vw; /* 親要素の幅を100%に設定 */
+  height: 100%; /* 必要に応じて高さを設定 */
+}
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3888888889vw;
+  padding-bottom: 2.0833333333vw;
+}
+
+.footer__sns {
+  width: 2.6388888889vw;
+  margin: 0 auto;
+}
+.footer__sns img {
+  width: 100%;
+}
+
+.footer__text {
+  color: #f7f3eb;
+  text-align: center;
+  font-family: "Noto sans jp", "sans-serif";
+  font-size: 0.8333333333vw;
+  font-weight: 600;
+  line-height: 1.1111111111vw; /* 133.333% */
+  letter-spacing: 0.0666666667vw;
+}
+
+.footer__button {
+  margin-bottom: 2.0833333333vw;
+}
+
+.footer__button-link {
+  width: 22.8472222222vw;
+  height: 7.0138888889vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.6944444444vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.8472222222vw 1.3888888889vw;
+  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2.0833333333vw;
+}
+
+.footer__button-icon {
+  width: 2.0833333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px; /* アイコンとテキスト間のスペース */
+}
+.footer__button-icon img {
+  width: 100%;
+}
+
+.footer__button-text {
+  color: #ffa8a8;
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
+  font-size: 1.1111111111vw;
+  font-weight: 800;
+}
+
+.footer__copy {
+  color: #f7f3eb;
+  text-align: center;
+  font-family: "Noto sans jp", "sans-serif";
+  font-size: 0.8333333333vw;
+  font-weight: 250;
+  margin-bottom: 3.4722222222vw;
 }

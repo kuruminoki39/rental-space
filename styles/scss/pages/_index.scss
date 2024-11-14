@@ -123,7 +123,7 @@
   // フォントカラー
   color: #fff;
   // フォント
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
   font-size: vw(16);
   font-weight: 800;
 }
@@ -138,7 +138,7 @@
 .header__nav li:nth-child(4),
 .header__nav li:nth-child(5) {
   background: #f7f3eb; /* ギャラリーとアクセスの背景色 */
-  color: #3b1800; /* ギャラリーとアクセスのフォントカラー */
+  color: $color-brown; /* ギャラリーとアクセスのフォントカラー */
 }
 
 .header__nav a {
@@ -169,7 +169,7 @@
 }
 
 // swiper
-.fv__wrapper {
+.fv__swiper {
   max-width: vw(1290);
   margin-left: auto;
   margin-right: auto;
@@ -196,14 +196,18 @@
   overflow: hidden;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  content: ""; /*contentを空にする*/
-}
+// .swiper-button-prev:after,
+// .swiper-button-next:after {
+//   content: ""; /*contentを空にする*/
+// }
 
 .swiper-pagination {
   // 丸を外に表示
   bottom: vw(-36) !important;
+  // 丸を中央に表示
+  position: absolute;
+  // 丸を中央に表示
+  margin: 0 auto;
 }
 
 // ページネーション非アクティブ時
@@ -246,7 +250,7 @@
 .fv__title {
   color: $color-brown;
   text-align: left;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
 
   font-weight: 800;
   font-size: vw(30);
@@ -259,7 +263,7 @@
   position: absolute;
   white-space: nowrap;
   color: $color-brown;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(14);
   font-weight: 600;
   line-height: 160%; /* 25.6px */
@@ -284,7 +288,7 @@
 .schedule__title {
   color: $color-brown;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: vw(50); /* 125% */
@@ -293,7 +297,7 @@
 .schedule__subtitle {
   color: $color-brown;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: $font-family2;
   font-size: vw(20);
   font-weight: 700;
   line-height: vw(50); /* 250% */
@@ -311,6 +315,10 @@
   }
 }
 
+.schedule__bottom {
+  width: 100%;
+}
+
 // scene
 .scene {
   background-color: $color-pink;
@@ -318,7 +326,6 @@
 
 .scene__inner {
   width: vw(1100);
-  padding-top: vw(158);
 
   align-items: center;
   margin: 0 auto;
@@ -326,9 +333,10 @@
 }
 
 .scene__title {
+  margin-top: vw(-50);
   color: $color-brown;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: vw(50); /* 125% */
@@ -337,7 +345,7 @@
 .scene__subtitle {
   color: $color-brown;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: $font-family2;
   font-size: vw(20);
   font-weight: 700;
   line-height: vw(50); /* 250% */
@@ -381,7 +389,7 @@
 }
 .scene__list-item--number {
   color: $color-pink;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: $font-family;
   font-size: vw(40);
 
   font-weight: 800;
@@ -390,7 +398,7 @@
 
 .scene__list-item--text {
   color: $color-pink;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(20);
   font-style: normal;
   font-weight: 600;
@@ -400,7 +408,7 @@
 
 .scene__list-item--description {
   color: $color-brown;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(14);
   font-style: normal;
   font-weight: 300;
@@ -408,6 +416,10 @@
   letter-spacing: vw(1.12);
   margin-top: vw(16);
   margin-bottom: vw(66);
+}
+
+.scene__bottom {
+  width: 100%;
 }
 
 // voice
@@ -423,7 +435,7 @@
 
 .voice__container {
   display: flex;
-  padding-top: vw(200);
+  padding-top: vw(-200);
   gap: vw(40);
   padding-bottom: vw(100);
 }
@@ -444,7 +456,7 @@
   writing-mode: vertical-rl;
   color: $color-brown;
   text-align: center;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: vw(46); /* 115% */
@@ -453,7 +465,7 @@
 .voice__subtitle {
   writing-mode: vertical-rl;
   color: $color-brown;
-  font-family: "Heisei Maru Gothic Std";
+  font-family: $font-family;
   font-size: vw(20);
   font-weight: 400;
   line-height: vw(50); /* 250% */
@@ -496,7 +508,7 @@
   width: vw(290) !important; /* カードの幅 */
   height: auto;
   margin-right: vw(25); /* カード間のスペース */
-  background-color: #fff;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -529,7 +541,7 @@
 
 .voice__slide--card-text-title {
   color: $color-blue;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(20);
   font-weight: 600;
   line-height: 140%; /* 28px */
@@ -537,7 +549,7 @@
 }
 .voice__slide--card-text-description {
   color: $color-brown;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(14);
   font-weight: 300;
   line-height: 140%; /* 19.6px */
@@ -548,6 +560,10 @@
   display: flex;
   flex-direction: column;
   gap: vw(16);
+
+  .voice__bottom {
+    width: 100%;
+  }
 }
 
 // information
@@ -556,7 +572,7 @@
 }
 .information__inner {
   width: vw(1100);
-  padding-top: vw(158);
+  padding-top: vw(-200);
 
   align-items: center;
   margin: 0 auto;
@@ -566,7 +582,7 @@
 .information__title {
   color: $color-brown;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: vw(50); /* 125% */
@@ -575,7 +591,7 @@
 .information__subtitle {
   color: $color-brown;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: $font-family2;
   font-size: vw(20);
   font-weight: 700;
   line-height: vw(50); /* 250% */
@@ -588,10 +604,10 @@
   flex-direction: row;
   gap: vw(30);
   justify-content: center;
-  padding-bottom: vw(100);
+  // padding-bottom: vw(100);
 }
 .information__card {
-  background: #fff;
+  background: $color-white;
   display: flex;
   width: vw(537) !important;
   padding: vw(30);
@@ -613,8 +629,8 @@
   height: vw(43);
   padding: vw(7) vw(122);
   border-radius: vw(60);
-  color: #fff;
-  font-family: "Noto sans jp";
+  color: $color-white;
+  font-family: $font-family3;
   font-size: vw(20);
   font-weight: 600;
   line-height: vw(30); /* 150% */
@@ -630,12 +646,12 @@
   padding: vw(10) vw(0);
   color: $color-brown;
   text-align: left;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(12);
   font-weight: 600;
   line-height: vw(24); /* 150% */
   letter-spacing: VW(1.28);
-  border-bottom: 1px solid #ede2da;
+  border-bottom: 1px solid $color-beige2;
 }
 
 .information__card--bottom {
@@ -643,7 +659,7 @@
 }
 .information__card--text2 {
   color: $color-brown;
-  font-family: "Noto sans jp";
+  font-family: $font-family3;
   font-size: vw(10);
   font-weight: 300;
   line-height: vw(16); /* 160% */
@@ -660,15 +676,19 @@
   width: 70%;
 }
 
+.information__bottom {
+  width: 100%;
+}
+
 // gallery
 
 .gallery {
-  background-color: #fff;
+  background-color: $color-white;
 }
 .gallery__inner {
   width: vw(1100);
-  padding-top: vw(158);
-
+  padding-top: vw(50);
+  padding-bottom: vw(50);
   align-items: center;
   margin: 0 auto;
   text-align: center;
@@ -677,7 +697,7 @@
 .gallery__title {
   color: $color-brown;
   text-align: center;
-  font-family: "heisei-maru-gothic-std", "Noto sans jp";
+  font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: vw(50); /* 125% */
@@ -686,9 +706,249 @@
 .gallery__subtitle {
   color: $color-brown;
   text-align: center;
-  font-family: "Zen Maru Gothic";
+  font-family: $font-family2;
   font-size: vw(20);
   font-weight: 700;
   line-height: vw(50); /* 250% */
   margin-bottom: vw(30);
+}
+
+.gallery__swiper-wrapper {
+  display: flex;
+  gap: vw(20);
+  align-items: center;
+}
+
+.gallery__swiper-slide {
+  display: flex;
+  gap: vw(20);
+  align-items: center;
+}
+.gallery__swiper-slide--img {
+  width: vw(215);
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// access
+
+.access {
+  background-color: $color-beige;
+}
+.access__top {
+}
+
+.access__inner {
+  width: vw(1100);
+  align-items: center;
+
+  // 左右中央
+  margin: 0 auto;
+  text-align: center;
+}
+
+.access__title {
+  color: $color-brown;
+  margin-top: vw(-70);
+  text-align: center;
+  font-family: $font-family;
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.access__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: $font-family2;
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+
+  margin-bottom: vw(30);
+}
+
+.access__map {
+  width: vw(1100);
+  margin: 0 auto;
+  // アスペクト比を保持
+  aspect-ratio: 16/9;
+  padding-bottom: vw(99);
+}
+
+.access__map iframe {
+  width: 100%; /* 親要素の幅に追従 */
+  height: 100%; /* 親要素の高さに追従 */
+  border: 0; /* 枠線を削除 */
+}
+
+//message
+
+.message {
+  background-color: $color-beige;
+}
+.message__inner {
+  width: vw(1100);
+  padding-bottom: vw(50);
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message__title {
+  color: $color-brown;
+  text-align: center;
+  font-family: $font-family;
+  font-size: vw(40);
+  font-weight: 800;
+  line-height: vw(50); /* 125% */
+}
+
+.message__subtitle {
+  color: $color-brown;
+  text-align: center;
+  font-family: $font-family2;
+  font-size: vw(20);
+  font-weight: 700;
+  line-height: vw(50); /* 250% */
+
+  margin-bottom: vw(30);
+}
+
+.message__image {
+  width: vw(175);
+  // 左右中央
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.message__text {
+  padding-top: vw(30);
+  width: vw(390);
+  height: auto;
+  margin: auto;
+}
+
+.message__text--description {
+  color: $color-brown;
+  font-family: $font-family3;
+  font-size: vw(14);
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: vw(1.12);
+}
+
+.message__bottom {
+  width: 100%;
+}
+// footer
+
+.footer {
+  background: #fea5a1;
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.footer__inner {
+  width: vw(1280);
+  margin-top: vw(-50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.footer__logo {
+  width: vw(160); /* 親要素の幅を100%に設定 */
+  height: 100%; /* 必要に応じて高さを設定 */
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: vw(20);
+  padding-bottom: vw(30);
+}
+
+.footer__sns {
+  width: vw(38);
+  // 左右中央
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__text {
+  color: $color-beige;
+  text-align: center;
+  font-family: $font-family3;
+  font-size: vw(12);
+  font-weight: 600;
+  line-height: vw(16); /* 133.333% */
+  letter-spacing: vw(0.96);
+}
+
+.footer__button {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-bottom: vw(30);
+}
+.footer__button-link {
+  width: vw(329);
+  height: vw(101);
+  display: flex;
+  flex-direction: row;
+  gap: vw(10);
+  align-items: center;
+  justify-content: center;
+  padding: vw(41) vw(20);
+  background-color: $color-white;
+  color: $color-white;
+  text-decoration: none;
+  border-radius: vw(30);
+}
+
+.footer__button-icon {
+  width: vw(30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px; /* アイコンとテキスト間のスペース */
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__button-text {
+  color: $color-pink;
+  font-family: $font-family;
+  font-size: vw(16);
+  font-weight: 800;
+  // line-height: 1; /* 125% */
+}
+
+.footer__copy {
+  color: $color-beige;
+  text-align: center;
+  font-family: $font-family3;
+  font-size: vw(12);
+  font-weight: 250;
+  margin-bottom: vw(50);
+  // line-height: vw(50); /* 416.667% */
 }

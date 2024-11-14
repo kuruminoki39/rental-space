@@ -52,3 +52,18 @@ arrowRight.addEventListener("click", () => {
 });
 
 // gallery
+const gallerySwiper = new Swiper(".gallery__swiper", {
+  // 画像同士の間隔
+  spaceBetween: 20,
+  // 画像の表示数
+  slidesPerView: auto,
+  // 画像の表示方向
+  loop: true,
+  // 画像の表示スピード
+  speed: 2000,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});
