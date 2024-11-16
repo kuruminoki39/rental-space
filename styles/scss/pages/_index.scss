@@ -903,14 +903,11 @@
 }
 
 .footer__button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   margin-bottom: vw(30);
 }
+
 .footer__button-link {
   width: vw(329);
-  height: vw(101);
   display: flex;
   flex-direction: row;
   gap: vw(10);
@@ -918,13 +915,13 @@
   justify-content: center;
   padding: vw(41) vw(20);
   background-color: $color-white;
-  color: $color-white;
   text-decoration: none;
   border-radius: vw(30);
 }
 
 .footer__button-icon {
   width: vw(30);
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -940,7 +937,11 @@
   font-family: $font-family;
   font-size: vw(16);
   font-weight: 800;
-  // line-height: 1; /* 125% */
+  line-height: 1;
+  align-items: center;
+  // 位置を調整、absoluteは不要
+  position: relative;
+  top: vw(2);
 }
 
 .footer__copy {

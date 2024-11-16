@@ -672,7 +672,7 @@ svg {
   position: absolute;
   white-space: nowrap;
   color: #3b1800;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 600;
   line-height: 160%; /* 25.6px */
@@ -819,7 +819,7 @@ svg {
 
 .scene__list-item--text {
   color: #ffa8a8;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-style: normal;
   font-weight: 600;
@@ -829,7 +829,7 @@ svg {
 
 .scene__list-item--description {
   color: #3b1800;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-style: normal;
   font-weight: 300;
@@ -994,7 +994,7 @@ svg {
 
 .voice__slide--card-text-title {
   color: #29a6ce;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
   line-height: 140%; /* 28px */
@@ -1003,7 +1003,7 @@ svg {
 
 .voice__slide--card-text-description {
   color: #3b1800;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%; /* 19.6px */
@@ -1103,7 +1103,7 @@ svg {
   padding: 0.4861111111vw 8.4722222222vw;
   border-radius: 4.1666666667vw;
   color: #fff;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
   line-height: 2.0833333333vw; /* 150% */
@@ -1118,7 +1118,7 @@ svg {
   padding: 0.6944444444vw 0vw;
   color: #3b1800;
   text-align: left;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 600;
   line-height: 1.6666666667vw; /* 150% */
@@ -1132,7 +1132,7 @@ svg {
 
 .information__card--text2 {
   color: #3b1800;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.6944444444vw;
   font-weight: 300;
   line-height: 1.1111111111vw; /* 160% */
@@ -1312,7 +1312,7 @@ svg {
 
 .message__text--description {
   color: #3b1800;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%; /* 19.6px */
@@ -1385,7 +1385,7 @@ svg {
 .footer__text {
   color: #f7f3eb;
   text-align: center;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 600;
   line-height: 1.1111111111vw; /* 133.333% */
@@ -1398,7 +1398,6 @@ svg {
 
 .footer__button-link {
   width: 22.8472222222vw;
-  height: 7.0138888889vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1415,13 +1414,13 @@ svg {
           justify-content: center;
   padding: 2.8472222222vw 1.3888888889vw;
   background-color: #fff;
-  color: #fff;
   text-decoration: none;
   border-radius: 2.0833333333vw;
 }
 
 .footer__button-icon {
   width: 2.0833333333vw;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1442,12 +1441,18 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 1.1111111111vw;
   font-weight: 800;
+  line-height: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 0.1388888889vw;
 }
 
 .footer__copy {
   color: #f7f3eb;
   text-align: center;
-  font-family: "Noto sans jp", "sans-serif";
+  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 250;
   margin-bottom: 3.4722222222vw;
