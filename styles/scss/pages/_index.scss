@@ -196,10 +196,10 @@
   overflow: hidden;
 }
 
-// .swiper-button-prev:after,
-// .swiper-button-next:after {
-//   content: ""; /*contentを空にする*/
-// }
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: ""; /*contentを空にする*/
+}
 
 .swiper-pagination {
   // 丸を外に表示
@@ -494,8 +494,8 @@
 }
 
 .voice__slide {
-  display: flex;
-  transition: transform 0.3s ease; /* スライド時のアニメーション */
+  // display: flex;
+  // transition: transform 0.3s ease; /* スライド時のアニメーション */
   // margin-right: vw(-800); /* 右側がはみ出すために余白を設定 */
 }
 

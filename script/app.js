@@ -57,6 +57,10 @@ const voiceSwiper = new Swiper(".voice__slide-wrapper", {
   // slidesPerView: auto,
   // // 画像の表示方向
   loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   // // 画像の表示スピード
   // speed: 2000,
   // autoplay: {

@@ -617,6 +617,11 @@ svg {
   overflow: hidden;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: ""; /*contentを空にする*/
+}
+
 .swiper-pagination {
   bottom: -2.5vw !important;
   position: absolute;
@@ -928,16 +933,6 @@ svg {
   position: relative;
   overflow: hidden; /* 左側を隠すために使用 */
   width: 100%;
-}
-
-.voice__slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* スライド時のアニメーション */
 }
 
 .voice__slide--card {
