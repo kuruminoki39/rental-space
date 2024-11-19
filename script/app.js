@@ -57,6 +57,7 @@ const voiceSwiper = new Swiper(".voice__slide-wrapper", {
   // slidesPerView: auto,
   // // 画像の表示方向
   loop: true,
+  slidesPerView: 4,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

@@ -480,13 +480,13 @@ svg {
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; /* ロゴ全体をフレックスボックスに設定 */
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; /* ロゴ画像を上下中央に配置 */
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* ロゴの中央揃え */
+          justify-content: center;
   width: 12.9861111111vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -553,17 +553,17 @@ svg {
 }
 
 .header__nav li:nth-child(2) {
-  background: #29a6ce; /* ご利用者の声の背景色 */
+  background: #29a6ce;
 }
 
 .header__nav li:nth-child(3) {
-  background: #85c36f; /* 施設案内の背景色 */
+  background: #85c36f;
 }
 
 .header__nav li:nth-child(4),
 .header__nav li:nth-child(5) {
-  background: #f7f3eb; /* ギャラリーとアクセスの背景色 */
-  color: #3b1800; /* ギャラリーとアクセスのフォントカラー */
+  background: #f7f3eb;
+  color: #3b1800;
 }
 
 .header__nav a {
@@ -635,7 +635,7 @@ svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -645,7 +645,7 @@ svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1 !important; /* 必要に応じて透明度を無効化 */
+  opacity: 1 !important;
 }
 
 .fv__bg {
@@ -668,7 +668,7 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-weight: 800;
   font-size: 2.0833333333vw;
-  line-height: 160%; /* 127.778% */
+  line-height: 160%;
   letter-spacing: 0.0108em;
   margin-bottom: 1.3888888889vw;
 }
@@ -680,7 +680,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 600;
-  line-height: 160%; /* 25.6px */
+  line-height: 160%;
   letter-spacing: 0.0128em;
 }
 
@@ -697,22 +697,22 @@ svg {
   text-align: center;
 }
 
-.schedule__title {
+.title {
   color: #3b1800;
   text-align: center;
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
+  line-height: 3.4722222222vw;
 }
 
-.schedule__subtitle {
+.subtitle {
   color: #3b1800;
   text-align: center;
   font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
+  line-height: 3.4722222222vw;
   margin-bottom: 2.0833333333vw;
 }
 
@@ -742,26 +742,6 @@ svg {
   text-align: center;
 }
 
-.scene__title {
-  margin-top: -3.4722222222vw;
-  color: #3b1800;
-  text-align: center;
-  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-  font-size: 2.7777777778vw;
-  font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
-}
-
-.scene__subtitle {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
-  font-size: 1.3888888889vw;
-  font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
-  margin-bottom: 2.0833333333vw;
-}
-
 .scene__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,9 +749,9 @@ svg {
   gap: 1.7361111111vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* 水平方向の中央揃え */
-  margin: 0 auto; /* 左右中央に配置 */
-  padding: 0; /* 必要に応じてパディングを調整 */
+          justify-content: center;
+  margin: 0 auto;
+  padding: 0;
   padding-bottom: 6.9444444444vw;
 }
 
@@ -819,7 +799,7 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
-  line-height: 140%; /* 56px */
+  line-height: 140%;
 }
 
 .scene__list-item--text {
@@ -828,7 +808,7 @@ svg {
   font-size: 1.3888888889vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
   letter-spacing: 0.1111111111vw;
 }
 
@@ -838,7 +818,7 @@ svg {
   font-size: 0.9722222222vw;
   font-style: normal;
   font-weight: 300;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   letter-spacing: 0.0777777778vw;
   margin-top: 1.1111111111vw;
   margin-bottom: 4.5833333333vw;
@@ -867,6 +847,7 @@ svg {
 }
 
 .voice__vertical {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,6 +856,28 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.4305555556vw;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow-right {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow-cursol {
+  cursor: pointer;
+  width: 1.6666666667vw;
+  height: w(24);
 }
 
 .voice__vertical--text {
@@ -896,7 +899,7 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
-  line-height: 3.1944444444vw; /* 115% */
+  line-height: 3.1944444444vw;
 }
 
 .voice__subtitle {
@@ -907,7 +910,7 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 400;
-  line-height: 3.4722222222vw; /* 250% */
+  line-height: 3.4722222222vw;
 }
 
 .voice__vertical--arrow {
@@ -926,12 +929,12 @@ svg {
 
 .voice__container {
   position: relative;
-  width: 100%; /* コンテナ全体の幅 */
+  width: 100%;
 }
 
 .voice__slide-wrapper {
   position: relative;
-  overflow: hidden; /* 左側を隠すために使用 */
+  overflow: hidden;
   width: 100%;
 }
 
@@ -939,9 +942,9 @@ svg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 20.1388888889vw !important; /* カードの幅 */
+  width: 20.1388888889vw !important;
   height: auto;
-  margin-right: 1.7361111111vw; /* カード間のスペース */
+  margin-right: 1.7361111111vw;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,12 +977,6 @@ svg {
   width: 4.1666666667vw;
 }
 
-.arrow {
-  cursor: pointer;
-  width: 1.6666666667vw;
-  height: w(24);
-}
-
 .voice__slide--card-img {
   width: 7.1527777778vw;
 }
@@ -992,7 +989,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
-  line-height: 140%; /* 28px */
+  line-height: 140%;
   letter-spacing: 0.1111111111vw;
 }
 
@@ -1001,7 +998,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   letter-spacing: 0.0112em;
 }
 
@@ -1031,25 +1028,6 @@ svg {
           align-items: center;
   margin: 0 auto;
   text-align: center;
-}
-
-.information__title {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-  font-size: 2.7777777778vw;
-  font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
-}
-
-.information__subtitle {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
-  font-size: 1.3888888889vw;
-  font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
-  margin-bottom: 2.0833333333vw;
 }
 
 .information__card--container {
@@ -1101,7 +1079,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
-  line-height: 2.0833333333vw; /* 150% */
+  line-height: 2.0833333333vw;
   letter-spacing: 0.1111111111vw;
 }
 
@@ -1116,7 +1094,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 600;
-  line-height: 1.6666666667vw; /* 150% */
+  line-height: 1.6666666667vw;
   letter-spacing: VW(1.28);
   border-bottom: 1px solid #ede2da;
 }
@@ -1130,7 +1108,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.6944444444vw;
   font-weight: 300;
-  line-height: 1.1111111111vw; /* 160% */
+  line-height: 1.1111111111vw;
   letter-spacing: 0.0555555556vw;
 }
 
@@ -1161,25 +1139,6 @@ svg {
           align-items: center;
   margin: 0 auto;
   text-align: center;
-}
-
-.gallery__title {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-  font-size: 2.7777777778vw;
-  font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
-}
-
-.gallery__subtitle {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
-  font-size: 1.3888888889vw;
-  font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
-  margin-bottom: 2.0833333333vw;
 }
 
 .gallery__swiper-wrapper {
@@ -1224,26 +1183,6 @@ svg {
   text-align: center;
 }
 
-.access__title {
-  color: #3b1800;
-  margin-top: -4.8611111111vw;
-  text-align: center;
-  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-  font-size: 2.7777777778vw;
-  font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
-}
-
-.access__subtitle {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
-  font-size: 1.3888888889vw;
-  font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
-  margin-bottom: 2.0833333333vw;
-}
-
 .access__map {
   width: 76.3888888889vw;
   margin: 0 auto;
@@ -1252,9 +1191,9 @@ svg {
 }
 
 .access__map iframe {
-  width: 100%; /* 親要素の幅に追従 */
-  height: 100%; /* 親要素の高さに追従 */
-  border: 0; /* 枠線を削除 */
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .message {
@@ -1269,25 +1208,6 @@ svg {
           align-items: center;
   margin: 0 auto;
   text-align: center;
-}
-
-.message__title {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
-  font-size: 2.7777777778vw;
-  font-weight: 800;
-  line-height: 3.4722222222vw; /* 125% */
-}
-
-.message__subtitle {
-  color: #3b1800;
-  text-align: center;
-  font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
-  font-size: 1.3888888889vw;
-  font-weight: 700;
-  line-height: 3.4722222222vw; /* 250% */
-  margin-bottom: 2.0833333333vw;
 }
 
 .message__image {
@@ -1310,7 +1230,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   letter-spacing: 0.0777777778vw;
 }
 
@@ -1325,10 +1245,10 @@ svg {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* 水平方向の中央揃え */
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; /* 垂直方向の中央揃え */
+          align-items: center;
 }
 
 .footer__inner {
@@ -1343,15 +1263,15 @@ svg {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; /* 水平方向の中央揃え */
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; /* 垂直方向の中央揃え */
+          align-items: center;
 }
 
 .footer__logo {
-  width: 11.1111111111vw; /* 親要素の幅を100%に設定 */
-  height: 100%; /* 必要に応じて高さを設定 */
+  width: 11.1111111111vw;
+  height: 100%;
 }
 .footer__logo img {
   width: 100%;
@@ -1383,7 +1303,7 @@ svg {
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 0.8333333333vw;
   font-weight: 600;
-  line-height: 1.1111111111vw; /* 133.333% */
+  line-height: 1.1111111111vw;
   letter-spacing: 0.0666666667vw;
 }
 
@@ -1425,7 +1345,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 30px; /* アイコンとテキスト間のスペース */
+  margin-right: 30px;
 }
 .footer__button-icon img {
   width: 100%;
