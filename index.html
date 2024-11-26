@@ -38,7 +38,7 @@
     <link rel="apple-touch-icon-precomposed" href="./images/favicon/XXXX.ico" />
 
     <!-- font -->
-    <!-- adobe font Heisei maru gothic family -->
+
     <script>
       (function (d) {
         var config = {
@@ -140,17 +140,18 @@
         </div>
 
         <div class="fv__bg">
-          <img src="./images/fv/fv-box.png" alt="" />
+          <img src="./images/fv/fv-box.png" alt="" data-only-show="pc" />
+          <img src="./images/fv/fv-box-sp.png" alt="" data-only-show="sp" />
         </div>
         <div class="fv__text">
-          <p class="fv__title">レンタルスペース宝塚</p>
+          <p class="fv__title">レンタル<br class="br-sp" />スペース<br class="br-sp" />宝塚</p>
           <p class="fv__sub-title">
-            自転車で通える所に教室を！<br />
-            レンタルスペース宝塚は<br />
-            「自転車で通える所に教室を！」をコンセプトに、<br />
-            主に周辺住民を対象としたお教室やサロン、<br />
-            ワークショップ、体験の場などを募集し、<br />
-            開催のサポートや教室を探している方への<br />
+            <span class="hide-on-sp">自転車で通える所に教室を！</span><br class="br-pc" />
+            レンタルスペース宝塚は<br class="br-pc" />
+            「自転車で通える所に教室を！」をコンセプトに、<br class="br-pc" />
+            主に周辺住民を対象としたお教室やサロン、<br class="br-pc" />
+            ワークショップ、体験の場などを募集し、<br class="br-pc" />
+            開催のサポートや教室を探している方への<br class="br-pc" />
             教室情報の発信をおこなっています。<br />
           </p>
         </div>
@@ -160,8 +161,8 @@
     <!-- schedule -->
     <section class="schedule">
       <div class="schedule__inner">
-        <h2 class="schedule__title">イベント情報</h2>
-        <p class="schedule__subtitle">SCHEDULE</p>
+        <h2 class="schedule__title title">イベント情報</h2>
+        <p class="schedule__subtitle subtitle">SCHEDULE</p>
 
         <div class="calender">
           <img src="/images/schedule/calender.png" alt="" />
@@ -169,14 +170,15 @@
       </div>
     </section>
     <div class="schedule__bottom">
-      <img src="./images/bottom/schedule-bottom-pc.png" alt="" />
+      <img src="./images/bottom/schedule-bottom-pc.png" alt="" data-only-show="pc" />
+      <img src="./images/bottom/schedule-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
     <!-- scene -->
     <section class="scene" id="scene">
       <div class="scene__inner">
-        <h2 class="scene__title">さまざまな用途でご利用いただけます</h2>
-        <p class="scene__subtitle">SCENE</p>
+        <h2 class="scene__title title">さまざまな用途で<br class="br-sp" />ご利用いただけます</h2>
+        <p class="scene__subtitle subtitle">SCENE</p>
       </div>
       <ul class="scene__list">
         <li class="scene__list-item">
@@ -218,25 +220,30 @@
       </ul>
     </section>
     <div class="scene__bottom">
-      <img src="./images/bottom/scene-bottom-pc.png" alt="" />
+      <img src="./images/bottom/scene-bottom-pc.png" alt="" data-only-show="pc" />
+      <img src="./images/bottom/scene-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
     <section class="voice" id="voice">
       <div class="voice__inner">
         <div class="voice__container">
+          <!-- voice  title-->
           <div class="voice__vertical">
+            <!-- voice text -->
             <div class="voice__vertical--text">
               <h2 class="voice__title">ご利用者の声</h2>
               <p class="voice__subtitle">VOICE</p>
             </div>
+            <!-- voice arrow -->
             <div class="voice__vertical--arrow">
-              <img src="./images/voice/voice-arrow-left.png" alt="Left Arrow" class="arrow arrow-left" />
-              <img src="./images/voice/voice-arrow-right.png" alt="Right Arrow" class="arrow arrow-right" />
+              <div class="swiper-button-prev arrow arrow-left"><img src="./images/voice/voice-arrow-left.png" alt="Left Arrow" class="arrow-cursol" /></div>
+              <div class="swiper-button-next arrow arrow-right"><img src="./images/voice/voice-arrow-right.png" alt="Right Arrow" class="arrow-cursol" /></div>
             </div>
           </div>
-          <div class="voice__slide-wrapper">
-            <div class="voice__slide">
-              <div class="voice__slide--card">
+          <!-- voice swiper -->
+          <div class="voice__slide-wrapper swiper">
+            <div class="voice__slide swiper-wrapper">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -247,7 +254,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -258,7 +265,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -269,7 +276,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -280,7 +287,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -291,7 +298,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -302,7 +309,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -313,7 +320,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -324,7 +331,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -335,7 +342,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -346,7 +353,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -357,7 +364,7 @@
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card">
+              <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
                   <img src="./images/voice/voice-picture-1.png" alt="" />
                 </div>
@@ -374,13 +381,14 @@
       </div>
     </section>
     <div class="voice__bottom">
-      <img src="./images/bottom/voice-bottom-pc.png" alt="" />
+      <img src="./images/bottom/voice-bottom-pc.png" alt="" data-only-show="pc" />
+      <img src="./images/bottom/voice-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
-    <section class="information">
+    <section class="information" id="information">
       <div class="information__inner">
-        <h2 class="information__title">ご利用案内</h2>
-        <p class="information__subtitle">INFORMATION</p>
+        <h2 class="information__title title">ご利用案内</h2>
+        <p class="information__subtitle subtitle">INFORMATION</p>
       </div>
 
       <div class="information__card--container">
@@ -464,35 +472,121 @@
       </div>
     </section>
     <div class="information__bottom">
-      <img src="./images/bottom/info-bottom-pc.png" alt="" />
+      <img src="./images/bottom/info-bottom-pc.png" alt="" data-only-show="pc" />
+      <img src="./images/bottom/info-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
     <!-- gallery -->
-    <section class="gallery">
-      <div class="gallery__inner">
-        <h2 class="gallery__title">ギャラリー</h2>
-        <p class="gallery__subtitle">GALLERY</p>
 
-        <div class="gallery__swiper swiper">
+    <section class="gallery" id="gallery">
+      <div class="gallery__inner">
+        <h2 class="gallery__title title">ギャラリー</h2>
+        <p class="gallery__subtitle subtitle">GALLERY</p>
+
+        <div class="gallery__swiper-top swiper">
           <div class="swiper-wrapper gallery__swiper-wrapper">
             <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
                 <img src="./images/gallery/gallery-1.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
                 <img src="./images/gallery/gallery-2.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
-                <img src="./images/gallery/gallery-2.png" alt="" />
+                <img src="./images/gallery/gallery-3.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
-                <img src="./images/gallery/gallery-2.png" alt="" />
+                <img src="./images/gallery/gallery-4.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
-                <img src="./images/gallery/gallery-2.png" alt="" />
+                <img src="./images/gallery/gallery-5.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-6.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-7.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-8.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-9.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-10.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__swiper-bottom swiper">
+          <div class="swiper-wrapper gallery__swiper-wrapper">
+            <div class="swiper-slide gallery__swiper-slide">
               <div class="swiper-slide__img gallery__swiper-slide--img">
                 <img src="./images/gallery/gallery-1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-2.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-3.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-4.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-5.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-6.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-7.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-8.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-9.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide gallery__swiper-slide">
+              <div class="swiper-slide__img gallery__swiper-slide--img">
+                <img src="./images/gallery/gallery-10.png" alt="" />
               </div>
             </div>
           </div>
@@ -500,13 +594,14 @@
       </div>
     </section>
 
-    <section class="access">
+    <section class="access" id="access">
       <div class="access__top">
-        <img src="./images/bottom/gallery-bottom-pc.png" alt="" />
+        <img src="./images/bottom/gallery-bottom-pc.png" alt="" data-only-show="pc" />
+        <img src="./images/bottom/gallery-bottom-sp.png" alt="" data-only-show="sp" />
       </div>
       <div class="access__inner">
-        <h2 class="access__title">アクセス</h2>
-        <p class="access__subtitle">ACCESS</p>
+        <h2 class="access__title title">アクセス</h2>
+        <p class="access__subtitle subtitle">ACCESS</p>
         <div class="access__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.558206747203!2d135.36475447635848!3d34.79189567831327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f3fad9062a4d%3A0x612f5914b74ea82f!2z44CSNjY1LTAwNDEg5YW15bqr55yM5a6d5aGa5biC5b6h5omA44Gu5YmN55S677yR77yT4oiS77yR77yZ!5e0!3m2!1sja!2sjp!4v1731499807661!5m2!1sja!2sjp"
@@ -520,10 +615,10 @@
     </section>
 
     <!-- message -->
-    <section class="message">
+    <section class="message" id="message">
       <div class="message__inner">
-        <h2 class="message__title">代表メッセージ</h2>
-        <p class="message__subtitle">MESSAGE</p>
+        <h2 class="message__title title">代表メッセージ</h2>
+        <p class="message__subtitle subtitle">MESSAGE</p>
         <div class="message__image">
           <img src="./images/message/image-photo.png" alt="" class="message__image--photo" />
         </div>
@@ -535,7 +630,8 @@
       </div>
     </section>
     <div class="message__bottom">
-      <img src="./images/bottom/message-bottom-pc.png" alt="" />
+      <img src="./images/bottom/message-bottom-pc.png" alt="" data-only-show="pc" />
+      <img src="./images/bottom/message-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
     <!-- footer -->
@@ -568,6 +664,7 @@
           <p class="copyright"><a href="" target="_blank">© 2024 InfoFarm co.,Ltd</a></p>
         </div>
       </div>
+      <a href="#" class="pagetop" id="js-pagetop"><img src="./images/footer/pagetop.png" alt="" /></a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
