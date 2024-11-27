@@ -388,6 +388,7 @@ th {
 
 html {
   font-size: 1.6667vw;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -635,7 +636,6 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__inner {
     width: 91.6666666667vw;
-    height: 133.3333333333vw;
     margin-bottom: 55.5555555556vw;
   }
 }
@@ -644,11 +644,13 @@ svg {
   max-width: 89.5833333333vw;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 0 3.4722222222vw;
 }
 @media screen and (max-width: 768px) {
   .fv__swiper {
     max-width: 91.6666666667vw;
     height: 133.3333333333vw;
+    padding: 0 0 13.8888888889vw;
   }
 }
 .fv__swiper img {
@@ -663,7 +665,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__swiper img {
     width: auto;
-    height: 133.3333333333vw;
+    height: 119.4444444444vw;
     border-radius: 19.4444444444vw 19.4444444444vw 19.4444444444vw 19.4444444444vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -686,9 +688,13 @@ svg {
 }
 
 .swiper-pagination {
-  bottom: -2.5vw !important;
   position: absolute;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    text-align: right;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -700,6 +706,12 @@ svg {
   background-position: center;
   opacity: 1 !important;
 }
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
 
 .swiper-pagination-bullet-active {
   width: 0.625vw;
@@ -710,20 +722,25 @@ svg {
   background-position: center;
   opacity: 1 !important;
 }
+@media screen and (max-width: 768px) {
+  .swiper-pagination-bullet-active {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
 
 .fv__bg {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -1px;
+  bottom: 3.4027777778vw;
   z-index: 1000;
   width: 30.5555555556vw;
 }
 @media screen and (max-width: 768px) {
   .fv__bg {
-    left: -1px;
-    bottom: -1px;
     width: 70.8333333333vw;
     height: 86.1111111111vw;
+    bottom: 13.6111111111vw;
   }
 }
 
