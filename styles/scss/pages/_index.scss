@@ -298,6 +298,8 @@
   width: vw(440);
 
   @include sp() {
+    left: -1px;
+    bottom: -1px;
     width: vw_sp(255);
     height: vw_sp(310);
   }

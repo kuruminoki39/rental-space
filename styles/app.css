@@ -720,6 +720,8 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .fv__bg {
+    left: -1px;
+    bottom: -1px;
     width: 70.8333333333vw;
     height: 86.1111111111vw;
   }
