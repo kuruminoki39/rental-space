@@ -191,7 +191,7 @@
 // fv
 .fv {
   padding-top: vw(80);
-  padding-bottom: vw(125);
+  padding-bottom: vw(70);
   background: $color-beige;
 
   @include sp() {
@@ -282,6 +282,7 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1 !important;
+  margin: 0 7px !important;
 
   @include sp() {
     width: vw_sp(9);
@@ -311,7 +312,7 @@
   left: -1px;
   bottom: vw(49);
   z-index: 1000;
-  width: vw(440);
+  width: vw(500);
 
   @include sp() {
     width: vw_sp(255);
@@ -323,7 +324,7 @@
 .fv__text {
   // fv__innerに対して絶対配置
   position: absolute;
-  top: vw(447);
+  top: vw(440);
   z-index: 1000;
 
   @include sp() {
@@ -336,7 +337,7 @@
   font-family: $font-family;
 
   font-weight: 800;
-  font-size: vw(30);
+  font-size: vw(36);
   line-height: 160%;
   letter-spacing: 0.0108em;
   margin-bottom: vw(20);
@@ -354,7 +355,7 @@
   white-space: nowrap;
   color: $color-brown;
   font-family: $font-family3;
-  font-size: vw(14);
+  font-size: vw(16);
   font-weight: 600;
   line-height: 160%;
   letter-spacing: 0.128em;
@@ -382,6 +383,7 @@
   align-items: center;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: vw(50);
 
   @include sp() {
     width: 100%;
@@ -444,9 +446,9 @@
 
 .scene__inner {
   width: vw(1100);
-
+  margin: vw(-50) auto 0 auto;
   align-items: center;
-  margin: 0 auto;
+
   text-align: center;
 
   @include sp() {
@@ -506,7 +508,7 @@
 .scene__list-item--contents {
   display: flex;
   flex-direction: column;
-
+  text-align: left;
   width: vw(272);
   margin: auto;
 
@@ -519,7 +521,6 @@
   color: $color-pink;
   font-family: $font-family;
   font-size: vw(40);
-
   font-weight: 800;
   line-height: 140%;
 
@@ -587,7 +588,8 @@
   display: flex;
   padding-top: vw(-200);
   gap: vw(40);
-  padding-bottom: vw(100);
+  // padding-bottom: vw(100);
+  height: auto;
 
   @include sp() {
     gap: vw_sp(20);
@@ -598,6 +600,7 @@
 .voice__vertical {
   position: relative;
   display: flex;
+  width: vw(180);
 
   // 縦並び
   flex-direction: column;
@@ -610,22 +613,22 @@
 
 .arrow-left {
   position: absolute;
-  top: 75%;
+  top: vw(350);
   left: 10%;
   transform: translateY(-50%);
 }
 
 .arrow-right {
   position: absolute;
-  top: 75%;
-  left: 50%;
+  top: vw(350);
+  left: 55%;
   transform: translateY(-50%);
 }
 
 .arrow-cursol {
   cursor: pointer;
-  width: vw(24);
-  height: w(24);
+  width: vw(40);
+  height: vw(40);
 }
 
 .voice__vertical--text {
@@ -645,7 +648,8 @@
   font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
-  line-height: vw(46);
+  line-height: 115%;
+  letter-spacing: vw(4);
 
   @include sp() {
     font-size: vw_sp(30);
@@ -672,13 +676,13 @@
 
 .voice__vertical--arrow {
   display: flex;
-  gap: vw(6);
-  // 左右中央揃え
-  justify-content: center;
+  // 左寄せ
+
+  // gap: 80px;
 
   img {
-    width: vw(33);
-    height: vw(33);
+    width: vw(60);
+    height: vw(60);
   }
 
   @include sp() {
@@ -747,7 +751,7 @@
   font-size: vw(20);
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: vw(1.6);
+  letter-spacing: 0.16em;
 
   @include sp() {
     font-size: vw_sp(20);
@@ -760,7 +764,7 @@
   font-size: vw(14);
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 
   @include sp() {
     font-size: vw_sp(14);
@@ -975,10 +979,11 @@
 
 .access__inner {
   width: vw(1100);
+  margin: vw(-50) auto 0 auto;
   align-items: center;
 
   // 左右中央
-  margin: 0 auto;
+
   text-align: center;
   padding-bottom: vw(90);
 
@@ -993,6 +998,9 @@
   margin: 0 auto;
   // アスペクト比を保持
   aspect-ratio: 16/9;
+  border-radius: vw(40);
+  overflow: hidden; /* 角丸を適用 */
+  z-index: 1000;
 
   @include sp() {
     // 左右中央
@@ -1067,7 +1075,7 @@
   font-size: vw(14);
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 
   @include sp() {
     font-size: vw_sp(14);
