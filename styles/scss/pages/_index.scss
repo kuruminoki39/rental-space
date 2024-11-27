@@ -208,7 +208,7 @@
 
   @include sp() {
     width: vw_sp(330);
-    height: vw_sp(480);
+    // height: vw_sp(480);
     margin-bottom: vw_sp(200);
   }
 }
@@ -218,11 +218,13 @@
   max-width: vw(1290);
   margin-left: auto;
   margin-right: auto;
+  padding: 0 0 vw(50);
   // margin-block: 50px;
 
   @include sp() {
     max-width: vw_sp(330);
     height: vw_sp(480);
+    padding: 0 0 vw_sp(50);
   }
 
   img {
@@ -236,7 +238,7 @@
 
     @include sp() {
       width: auto;
-      height: vw_sp(480);
+      height: vw_sp(430);
       border-radius: vw_sp(70) vw_sp(70) vw_sp(70) vw_sp(70);
       object-fit: cover;
     }
@@ -260,11 +262,15 @@
 
 .swiper-pagination {
   // 丸を外に表示
-  bottom: vw(-36) !important;
+  // bottom: vw(-36) !important;
   // 丸を中央に表示
   position: absolute;
   // 丸を中央に表示
   margin: 0 auto;
+
+  @include sp() {
+    text-align: right;
+  }
 }
 
 // ページネーション非アクティブ時
@@ -276,6 +282,11 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1 !important;
+
+  @include sp() {
+    width: vw_sp(9);
+    height: vw_sp(9);
+  }
 }
 
 // ページネーションアクティブ時
@@ -287,19 +298,25 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1 !important;
+
+  @include sp() {
+    width: vw_sp(9);
+    height: vw_sp(9);
+  }
 }
 
 .fv__bg {
   // fv__innerに対して絶対配置
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -1px;
+  bottom: vw(49);
   z-index: 1000;
   width: vw(440);
 
   @include sp() {
     width: vw_sp(255);
     height: vw_sp(310);
+    bottom: vw_sp(49);
   }
 }
 

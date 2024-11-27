@@ -61,11 +61,19 @@ const gallerySwiperBottom = new Swiper(".gallery__swiper-bottom", {
   },
 });
 
-//topへ戻る
-jQuery(window).on("scroll", function () {
-  if (300 < jQuery(window).scrollTop()) {
-    jQuery("#js-pagetop").addClass("is-show");
+// スクロール時の処理
+const pageTopButton = document.querySelector("#js-pagetop");
+const handleScroll = () => {
+  if (window.scrollY > 300) {
+    pageTopButton.classList.add("is-show");
   } else {
-    jQuery("#js-pagetop").removeClass("is-show");
+    pageTopButton.classList.remove("is-show");
   }
+};
+
+// イベント発火を間引く
+let timeout;
+window.addEventListener("scroll", () => {
+  clearTimeout(timeout);
+  timeout = setTimeout(handleScroll, 50);
 });
