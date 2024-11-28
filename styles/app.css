@@ -611,8 +611,8 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .header__icon {
-    width: 25vw;
-    height: 25vw;
+    width: 33.3333333333vw;
+    height: 33.3333333333vw;
   }
 }
 
@@ -649,7 +649,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__swiper {
     max-width: 91.6666666667vw;
-    height: 133.3333333333vw;
+    height: 138.8888888889vw;
     padding: 0 0 13.8888888889vw;
   }
 }
@@ -665,7 +665,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__swiper img {
     width: auto;
-    height: 119.4444444444vw;
+    height: 125vw;
     border-radius: 19.4444444444vw 19.4444444444vw 19.4444444444vw 19.4444444444vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -693,7 +693,8 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .swiper-pagination {
-    text-align: right;
+    margin-left: 25vw;
+    bottom: 5.5555555556vw !important;
   }
 }
 
@@ -740,7 +741,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__bg {
     width: 70.8333333333vw;
-    height: 86.1111111111vw;
+    height: 77.7777777778vw;
     bottom: 13.6111111111vw;
   }
 }
@@ -763,7 +764,6 @@ svg {
   font-weight: 800;
   font-size: 2.5vw;
   line-height: 160%;
-  letter-spacing: 0.0108em;
   margin-bottom: 1.3888888889vw;
 }
 @media screen and (max-width: 768px) {
@@ -783,7 +783,6 @@ svg {
   font-size: 1.1111111111vw;
   font-weight: 600;
   line-height: 160%;
-  letter-spacing: 0.128em;
 }
 @media screen and (max-width: 768px) {
   .fv__sub-title {
@@ -995,7 +994,7 @@ svg {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: 0.1111111111vw;
+  letter-spacing: 0.16em;
 }
 @media screen and (max-width: 768px) {
   .scene__list-item--text {
@@ -1010,7 +1009,7 @@ svg {
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0777777778vw;
+  letter-spacing: 0.112em;
   margin-top: 1.1111111111vw;
   margin-bottom: 4.5833333333vw;
 }
@@ -1120,12 +1119,12 @@ svg {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3b1800;
-  text-align: center;
+  text-align: start;
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
   line-height: 115%;
-  letter-spacing: 0.2777777778vw;
+  letter-spacing: 0.12em;
 }
 @media screen and (max-width: 768px) {
   .voice__title {
@@ -1148,9 +1147,7 @@ svg {
   .voice__subtitle {
     font-size: 3.3333333333vw;
     line-height: 13.8888888889vw;
-    text-align: left; /* 縦方向の左寄せ */
-    margin: 0;
-    padding: 0;
+    padding-right: 1.3888888889vw;
   }
 }
 
@@ -1284,7 +1281,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .information__inner {
-    width: 100%;
+    width: 91.6666666667vw;
   }
 }
 
@@ -1307,7 +1304,7 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5.5555555556vw;
+    gap: 8.3333333333vw;
     margin: 0 auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1330,7 +1327,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.0833333333vw;
+  gap: 0.6944444444vw;
   border-radius: 4.1666666667vw;
 }
 @media screen and (max-width: 768px) {
@@ -1340,12 +1337,17 @@ svg {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 13.8888888889vw;
+    padding-top: 6.9444444444vw;
+    padding-left: 8.3333333333vw;
+    padding-right: 8.3333333333vw;
+    padding-bottom: 6.9444444444vw;
+    gap: 5.5555555556vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .information__subtitle {
-    margin-bottom: 4.1666666667vw;
+    margin-bottom: 8.3333333333vw;
   }
 }
 
@@ -1363,24 +1365,23 @@ svg {
   text-align: center;
   width: 32.6388888889vw;
   height: 2.9861111111vw;
-  padding: 0.4861111111vw 8.4722222222vw;
+  padding: 0.6944444444vw 8.4722222222vw 0.4861111111vw 8.4722222222vw;
   border-radius: 4.1666666667vw;
   color: #fff;
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
-  line-height: 2.0833333333vw;
-  letter-spacing: 0.1111111111vw;
+  line-height: 150%;
+  letter-spacing: 0.16em;
 }
 @media screen and (max-width: 768px) {
   .information__card--title {
     width: 77.7777777778vw;
     height: 11.9444444444vw;
-    padding: 1.9444444444vw 8.4722222222vw;
+    padding: 2.7777777778vw 8.4722222222vw 1.9444444444vw 8.4722222222vw;
     border-radius: 16.6666666667vw;
     font-size: 5.5555555556vw;
-    line-height: 4.1666666667vw;
-    letter-spacing: 0.3555555556vw;
+    line-height: 150%;
   }
 }
 
@@ -1393,18 +1394,18 @@ svg {
   color: #3b1800;
   text-align: left;
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
-  font-size: 0.8333333333vw;
+  font-size: 1.1111111111vw;
   font-weight: 600;
   line-height: 1.6666666667vw;
-  letter-spacing: 0.0128em;
+  letter-spacing: 0.128em;
   border-bottom: 1px solid #ede2da;
 }
 @media screen and (max-width: 768px) {
   .information__card--text1 {
     padding: 2.7777777778vw 0vw;
-    font-size: 3.8888888889vw;
+    font-size: 3.3333333333vw;
     line-height: 150%;
-    letter-spacing: 0.0128em;
+    letter-spacing: 0.128em;
   }
 }
 
@@ -1423,7 +1424,7 @@ svg {
   font-size: 0.6944444444vw;
   font-weight: 300;
   line-height: 1.1111111111vw;
-  letter-spacing: 0.0555555556vw;
+  letter-spacing: 0.128em;
 }
 @media screen and (max-width: 768px) {
   .information__card--text2 {
@@ -1436,11 +1437,23 @@ svg {
 .information__card--left {
   vertical-align: middle;
   width: 30%;
+  padding: 0.6944444444vw;
+}
+@media screen and (max-width: 768px) {
+  .information__card--left {
+    padding: 2.7777777778vw;
+  }
 }
 
 .information__card--right {
   vertical-align: middle;
   width: 70%;
+  padding: 0.6944444444vw;
+}
+@media screen and (max-width: 768px) {
+  .information__card--right {
+    padding: 2.7777777778vw;
+  }
 }
 
 .information__bottom {
@@ -1508,7 +1521,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .access__inner {
-    width: 100%;
+    width: 91.6666666667vw;
     padding-bottom: 16.6666666667vw;
   }
 }
@@ -1553,7 +1566,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .message__inner {
-    width: 100%;
+    width: 91.6666666667vw;
     padding-bottom: 5.5555555556vw;
   }
 }
@@ -1573,6 +1586,7 @@ svg {
 
 .message__text {
   padding-top: 2.0833333333vw;
+  margin: 0 auto;
   width: 27.0833333333vw;
   height: auto;
   margin: auto;

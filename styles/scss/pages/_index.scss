@@ -184,8 +184,8 @@
   height: vw(185);
 
   @include sp() {
-    width: vw_sp(90);
-    height: vw_sp(90);
+    width: vw_sp(120);
+    height: vw_sp(120);
   }
 }
 // fv
@@ -208,7 +208,7 @@
 
   @include sp() {
     width: vw_sp(330);
-    // height: vw_sp(480);
+
     margin-bottom: vw_sp(200);
   }
 }
@@ -223,7 +223,7 @@
 
   @include sp() {
     max-width: vw_sp(330);
-    height: vw_sp(480);
+    height: vw_sp(500);
     padding: 0 0 vw_sp(50);
   }
 
@@ -238,7 +238,7 @@
 
     @include sp() {
       width: auto;
-      height: vw_sp(430);
+      height: vw_sp(450);
       border-radius: vw_sp(70) vw_sp(70) vw_sp(70) vw_sp(70);
       object-fit: cover;
     }
@@ -261,15 +261,14 @@
 }
 
 .swiper-pagination {
-  // 丸を外に表示
-  // bottom: vw(-36) !important;
-  // 丸を中央に表示
   position: absolute;
   // 丸を中央に表示
   margin: 0 auto;
 
   @include sp() {
-    text-align: right;
+    // text-align: right;
+    margin-left: vw_sp(90);
+    bottom: vw_sp(20) !important;
   }
 }
 
@@ -316,7 +315,7 @@
 
   @include sp() {
     width: vw_sp(255);
-    height: vw_sp(310);
+    height: vw_sp(280);
     bottom: vw_sp(49);
   }
 }
@@ -339,7 +338,6 @@
   font-weight: 800;
   font-size: vw(36);
   line-height: 160%;
-  letter-spacing: 0.0108em;
   margin-bottom: vw(20);
 
   @include sp() {
@@ -358,11 +356,12 @@
   font-size: vw(16);
   font-weight: 600;
   line-height: 160%;
-  letter-spacing: 0.128em;
+  // letter-spacing: 0.128em;
 
   @include sp() {
     font-size: vw_sp(14);
     width: vw_sp(160);
+    // 左寄せ
     white-space: normal;
   }
 }
@@ -536,7 +535,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: vw(1.6);
+  letter-spacing: 0.16em;
 
   @include sp() {
     font-size: vw_sp(20);
@@ -550,7 +549,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: vw(1.12);
+  letter-spacing: 0.112em;
   margin-top: vw(16);
   margin-bottom: vw(66);
 
@@ -644,12 +643,12 @@
 .voice__title {
   writing-mode: vertical-rl;
   color: $color-brown;
-  text-align: center;
+  text-align: start;
   font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
   line-height: 115%;
-  letter-spacing: vw(4);
+  letter-spacing: 0.12em;
 
   @include sp() {
     font-size: vw_sp(30);
@@ -668,9 +667,7 @@
   @include sp() {
     font-size: vw_sp(12);
     line-height: vw_sp(50);
-    text-align: left; /* 縦方向の左寄せ */
-    margin: 0;
-    padding: 0;
+    padding-right: vw_sp(5);
   }
 }
 
@@ -794,7 +791,7 @@
   text-align: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
   }
 }
 
@@ -806,9 +803,10 @@
 
   @include sp() {
     flex-direction: column;
-    gap: vw_sp(20);
+    gap: vw_sp(30);
     margin: 0 auto;
     align-items: center;
+
     padding-bottom: vw_sp(20);
   }
 }
@@ -820,19 +818,24 @@
   padding: vw(30);
   flex-direction: column;
   align-items: center;
-  gap: vw(30);
+  gap: vw(10);
   border-radius: vw(60);
 
   @include sp() {
     width: vw_sp(330) !important;
     align-items: center;
     border-radius: vw_sp(50);
+    padding-top: vw_sp(25);
+    padding-left: vw_sp(30);
+    padding-right: vw_sp(30);
+    padding-bottom: vw_sp(25);
+    gap: vw_sp(20);
   }
 }
 
 .information__subtitle {
   @include sp() {
-    margin-bottom: vw_sp(15);
+    margin-bottom: vw_sp(30);
   }
 }
 
@@ -847,23 +850,24 @@
   text-align: center;
   width: vw(470);
   height: vw(43);
-  padding: vw(7) vw(122);
+  // 余白上下左右
+  padding: vw(10) vw(122) vw(7) vw(122);
   border-radius: vw(60);
   color: $color-white;
   font-family: $font-family3;
   font-size: vw(20);
   font-weight: 600;
-  line-height: vw(30);
-  letter-spacing: vw(1.6);
+  line-height: 150%;
+  letter-spacing: 0.16em;
 
   @include sp() {
     width: vw_sp(280);
     height: vw_sp(43);
-    padding: vw_sp(7) vw(122);
+    // 余白上右下左
+    padding: vw_sp(10) vw(122) vw_sp(7) vw(122);
     border-radius: vw_sp(60);
     font-size: vw_sp(20);
-    line-height: vw_sp(15);
-    letter-spacing: vw_sp(1.28);
+    line-height: 150%;
   }
 }
 
@@ -877,17 +881,17 @@
   color: $color-brown;
   text-align: left;
   font-family: $font-family3;
-  font-size: vw(12);
+  font-size: vw(16);
   font-weight: 600;
   line-height: vw(24);
-  letter-spacing: 0.0128em;
+  letter-spacing: 0.128em;
   border-bottom: 1px solid $color-beige2;
 
   @include sp() {
     padding: vw_sp(10) vw(0);
-    font-size: vw_sp(14);
+    font-size: vw_sp(12);
     line-height: 150%;
-    letter-spacing: 0.0128em;
+    letter-spacing: 0.128em;
   }
 }
 
@@ -904,7 +908,7 @@
   font-size: vw(10);
   font-weight: 300;
   line-height: vw(16);
-  letter-spacing: vw(0.8);
+  letter-spacing: 0.128em;
 
   @include sp() {
     font-size: vw_sp(8);
@@ -916,11 +920,21 @@
 .information__card--left {
   vertical-align: middle;
   width: 30%;
+  padding: vw(10);
+
+  @include sp() {
+    padding: vw_sp(10);
+  }
 }
 
 .information__card--right {
   vertical-align: middle;
   width: 70%;
+  padding: vw(10);
+
+  @include sp() {
+    padding: vw_sp(10);
+  }
 }
 
 .information__bottom {
@@ -988,7 +1002,7 @@
   padding-bottom: vw(90);
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
     padding-bottom: vw_sp(60);
   }
 }
@@ -1024,6 +1038,7 @@
 .message {
   background-color: $color-beige;
 }
+
 .message__inner {
   width: vw(1100);
   padding-bottom: vw(50);
@@ -1032,11 +1047,10 @@
   text-align: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
     padding-bottom: vw_sp(20);
   }
 }
-
 .message__image {
   width: vw(175);
   // 左右中央
@@ -1053,6 +1067,8 @@
 
 .message__text {
   padding-top: vw(30);
+  // 左右中央
+  margin: 0 auto;
   width: vw(390);
   height: auto;
   margin: auto;
@@ -1191,6 +1207,7 @@
   @include sp() {
     width: vw_sp(19);
   }
+
   img {
     width: 100%;
   }
