@@ -1,12 +1,8 @@
 // fv swiper
 const fvSwiper = new Swiper(".fv__swiper", {
-  // 画像同士の間隔
   spaceBetween: 20,
-  // 画像の表示数
   slidesPerView: 1,
-  // 画像の表示方向
   loop: true,
-  // 画像の表示スピード
   speed: 4000,
 
   autoplay: {
@@ -31,13 +27,9 @@ const voiceSwiper = new Swiper(".voice__slide-wrapper", {
 
 // gallery swiper
 const gallerySwiperTop = new Swiper(".gallery__swiper-top", {
-  // 画像同士の間隔
   spaceBetween: 20,
-  // 画像の表示数
   slidesPerView: "auto",
-  // 画像の表示方向
   loop: true,
-  // 画像の表示スピード
   speed: 4000,
 
   autoplay: {
@@ -46,13 +38,9 @@ const gallerySwiperTop = new Swiper(".gallery__swiper-top", {
 });
 
 const gallerySwiperBottom = new Swiper(".gallery__swiper-bottom", {
-  // 画像同士の間隔
   spaceBetween: 20,
-  // 画像の表示数
   slidesPerView: "auto",
-  // 画像の表示方向
   loop: true,
-  // 画像の表示スピード
   speed: 6000,
 
   autoplay: {
@@ -61,7 +49,7 @@ const gallerySwiperBottom = new Swiper(".gallery__swiper-bottom", {
   },
 });
 
-// スクロール時の処理
+// scroll event
 const pageTopButton = document.querySelector("#js-pagetop");
 const handleScroll = () => {
   if (window.scrollY > 300) {
@@ -71,7 +59,6 @@ const handleScroll = () => {
   }
 };
 
-// イベント発火を間引く
 let timeout;
 window.addEventListener("scroll", () => {
   clearTimeout(timeout);

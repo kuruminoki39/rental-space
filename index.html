@@ -105,8 +105,9 @@
         </nav>
       </div>
 
-      <a href="mailto:example@example.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" class="header__icon-link">
-        <img src="./images/header/header-icon.png" alt="メールフォーム" class="header__icon" />
+      <a href="mailto:example@example.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" class="header__icon--link">
+        <img src="./images/header/header-icon.png" alt="メールフォーム" class="header__icon" data-only-show="pc" />
+        <img src="./images/header/header-icon-sp.png" alt="メールフォーム" class="header__icon" data-only-show="sp" />
       </a>
     </header>
 
@@ -115,11 +116,6 @@
       <div class="fv__inner">
         <div class="fv__swiper swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-slide__img">
-                <img src="./images/fv/fv-pc.jpg" alt="" />
-              </div>
-            </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
                 <img src="./images/fv/fv-pc.jpg" alt="" />
@@ -146,7 +142,6 @@
         <div class="fv__text">
           <p class="fv__title">レンタル<br class="br-sp" />スペース<br class="br-sp" />宝塚</p>
           <p class="fv__sub-title">
-            <span class="hide-on-sp">自転車で通える所に教室を！</span><br class="br-pc" />
             レンタルスペース宝塚は<br class="br-pc" />
             「自転車で通える所に教室を！」をコンセプトに、<br class="br-pc" />
             主に周辺住民を対象としたお教室やサロン、<br class="br-pc" />
@@ -179,45 +174,46 @@
       <div class="scene__inner">
         <h2 class="scene__title title">さまざまな用途で<br class="br-sp" />ご利用いただけます</h2>
         <p class="scene__subtitle subtitle">SCENE</p>
+
+        <ul class="scene__list">
+          <li class="scene__list-item">
+            <div class="scene__list-item--picture">
+              <img src="./images/scene/scene-picture-1.png" alt="" />
+            </div>
+            <div class="scene__list-item--contents">
+              <p class="scene__list-item--number">01</p>
+              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--description">
+                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+              </p>
+            </div>
+          </li>
+          <li class="scene__list-item">
+            <div class="scene__list-item--picture">
+              <img src="./images/scene/scene-picture-1.png" alt="" />
+            </div>
+            <div class="scene__list-item--contents">
+              <p class="scene__list-item--number">02</p>
+              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--description">
+                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+              </p>
+            </div>
+          </li>
+          <li class="scene__list-item">
+            <div class="scene__list-item--picture">
+              <img src="./images/scene/scene-picture-1.png" alt="" />
+            </div>
+            <div class="scene__list-item--contents">
+              <p class="scene__list-item--number">03</p>
+              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--description">
+                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="scene__list">
-        <li class="scene__list-item">
-          <div class="scene__list-item--picture">
-            <img src="./images/scene/scene-picture-1.png" alt="" />
-          </div>
-          <div class="scene__list-item--contents">
-            <p class="scene__list-item--number">01</p>
-            <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
-            <p class="scene__list-item--description">
-              本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
-            </p>
-          </div>
-        </li>
-        <li class="scene__list-item">
-          <div class="scene__list-item--picture">
-            <img src="./images/scene/scene-picture-1.png" alt="" />
-          </div>
-          <div class="scene__list-item--contents">
-            <p class="scene__list-item--number">02</p>
-            <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
-            <p class="scene__list-item--description">
-              本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
-            </p>
-          </div>
-        </li>
-        <li class="scene__list-item">
-          <div class="scene__list-item--picture">
-            <img src="./images/scene/scene-picture-1.png" alt="" />
-          </div>
-          <div class="scene__list-item--contents">
-            <p class="scene__list-item--number">03</p>
-            <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
-            <p class="scene__list-item--description">
-              本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
-            </p>
-          </div>
-        </li>
-      </ul>
     </section>
     <div class="scene__bottom">
       <img src="./images/bottom/scene-bottom-pc.png" alt="" data-only-show="pc" />
@@ -250,7 +246,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -261,7 +257,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -272,7 +268,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -283,7 +279,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -294,7 +290,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -305,7 +301,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -316,7 +312,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -327,7 +323,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -338,7 +334,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -349,7 +345,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -360,7 +356,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -371,7 +367,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文
+                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
                   </p>
                 </div>
               </div>
@@ -385,6 +381,7 @@
       <img src="./images/bottom/voice-bottom-sp.png" alt="" data-only-show="sp" />
     </div>
 
+    <!-- information -->
     <section class="information" id="information">
       <div class="information__inner">
         <h2 class="information__title title">ご利用案内</h2>
@@ -594,6 +591,7 @@
       </div>
     </section>
 
+    <!-- access -->
     <section class="access" id="access">
       <div class="access__top">
         <img src="./images/bottom/gallery-bottom-pc.png" alt="" data-only-show="pc" />
@@ -643,7 +641,9 @@
         <!-- footer container -->
         <div class="footer__container">
           <div class="footer__sns">
-            <img src="./images/footer/sns-icon.png" alt="" class="footer__photo" />
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
+              <img src="./images/footer/sns-icon.png" alt="instagram" class="footer__sns" />
+            </a>
           </div>
           <div class="footer__text">
             レンタルスペース宝塚<br />

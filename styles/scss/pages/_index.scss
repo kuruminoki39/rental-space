@@ -26,42 +26,36 @@
 }
 
 .br-sp {
-  display: none; /* PC向けの改行は初期状態で非表示 */
+  display: none;
 
   @include sp() {
-    display: inline; /* SP向けの改行を表示にする */
+    display: inline;
   }
 }
 
 .br-pc {
-  display: inline; /* PC向けの改行は初期状態で非表示 */
+  display: inline;
 
   @include sp() {
-    display: none; /* SP向けの改行を表示にする */
+    display: none;
   }
 }
 
 .header {
-  // 全面に表示
-  // z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-
   box-sizing: border-box;
   background-color: $color-beige;
 }
 
 .header__inner {
-  // 最大幅
+  display: flex;
+  justify-content: space-between;
+
   width: vw(1280);
   margin: auto;
-  // 横並び
-  display: flex;
-  // 両端揃え
-  justify-content: space-between;
-  // 内側余白　上右下左
   padding: vw(0);
 
   @include sp() {
@@ -75,12 +69,11 @@
   align-items: center;
   justify-content: center;
   width: vw(187);
+  transition: 0.3s;
 
   a {
     display: block;
   }
-
-  transition: 0.3s;
 
   &:hover {
     opacity: 0.5;
@@ -93,14 +86,9 @@
 }
 
 .header__nav {
-  // 横並び
   display: flex;
-  // 両端揃え
   justify-content: center;
-  // 内側余白
   margin-top: vw(0);
-  margin-right: auto;
-  // お申込みアイコン分余白
   margin-right: vw(130);
 
   @include sp() {
@@ -109,70 +97,55 @@
 }
 
 .header__nav ul {
-  // リストのスタイルをなくす
   list-style: none;
-  // 横並び
   display: flex;
-  // 両端揃え
   justify-content: center;
-  // 間隔
   gap: vw(6);
-  // 　内側余白
   margin-bottom: vw(15);
-
-  // @include sp() {
-  //   // スマホ版では表示しない
-  //   display: none;
-  // }
 }
 
 .header__nav li {
-  // position: relative;
-  // 高さや幅が指定可能となる
   display: flex;
-  // 横並び
   justify-content: center;
-  // 上下中央揃え
   align-items: center;
-  // ブロックレベル要素内のテキストを中央揃え
   text-align: center;
-  // リストのスタイルをなくす
-  list-style: none;
-  // 下の余白
 
-  // 横幅
+  list-style: none;
   width: vw(156);
-  // height: vw(65);
-  // 丸み
   border-radius: vw(0) vw(0) vw(30) vw(30);
-  // 背景色
-  background: #ffa8a8;
-  // 影
+  background: $color-pink;
   box-shadow: vw(0) vw(0) vw(20) vw(0) rgba(0, 0, 0, 0.15);
-  // フォントカラー
-  color: #fff;
-  // フォント
+  color: $color-white;
+
   font-family: $font-family;
   font-size: vw(16);
   font-weight: 800;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .header__nav li:nth-child(2) {
-  background: #29a6ce;
+  background: $color-blue;
 }
 
 .header__nav li:nth-child(3) {
-  background: #85c36f;
+  background: $color-green;
 }
 .header__nav li:nth-child(4),
 .header__nav li:nth-child(5) {
-  background: #f7f3eb;
+  background: $color-beige;
   color: $color-brown;
 }
 
 .header__nav a {
   padding: vw(25) vw(16);
   white-space: nowrap;
+}
+
+.header__link {
 }
 
 .header__icon {
@@ -184,32 +157,29 @@
   height: vw(185);
 
   @include sp() {
-    width: vw_sp(90);
-    height: vw_sp(90);
+    width: vw_sp(120);
+    height: vw_sp(120);
   }
 }
+
 // fv
 .fv {
-  padding-top: vw(80);
-  padding-bottom: vw(125);
+  padding: vw(80) 0 vw(70) 0;
   background: $color-beige;
 
   @include sp() {
-    padding-top: vw_sp(50);
-    padding-bottom: vw_sp(50);
+    padding: vw_sp(50) 0;
   }
 }
 
 .fv__inner {
-  // 最大幅
   width: vw(1280);
   margin: auto;
   position: relative;
 
   @include sp() {
     width: vw_sp(330);
-    // height: vw_sp(480);
-    margin-bottom: vw_sp(200);
+    margin-bottom: vw_sp(150);
   }
 }
 
@@ -219,11 +189,10 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 0 vw(50);
-  // margin-block: 50px;
 
   @include sp() {
     max-width: vw_sp(330);
-    height: vw_sp(480);
+    height: vw_sp(500);
     padding: 0 0 vw_sp(50);
   }
 
@@ -232,14 +201,13 @@
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: vw(70) vw(70) vw(70) vw(70);
-    //親要素からのはみ出しを防ぐ
+    border-radius: vw(70);
     object-fit: contain;
 
     @include sp() {
       width: auto;
-      height: vw_sp(430);
-      border-radius: vw_sp(70) vw_sp(70) vw_sp(70) vw_sp(70);
+      height: vw_sp(450);
+      border-radius: vw_sp(70);
       object-fit: cover;
     }
   }
@@ -257,19 +225,16 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  content: ""; /*contentを空にする*/
+  content: "";
 }
 
 .swiper-pagination {
-  // 丸を外に表示
-  // bottom: vw(-36) !important;
-  // 丸を中央に表示
   position: absolute;
-  // 丸を中央に表示
   margin: 0 auto;
 
   @include sp() {
-    text-align: right;
+    margin-left: vw_sp(90);
+    bottom: vw_sp(20) !important;
   }
 }
 
@@ -282,6 +247,7 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1 !important;
+  margin: 0 7px !important;
 
   @include sp() {
     width: vw_sp(9);
@@ -306,39 +272,37 @@
 }
 
 .fv__bg {
-  // fv__innerに対して絶対配置
   position: absolute;
   left: -1px;
   bottom: vw(49);
   z-index: 1000;
-  width: vw(440);
+  width: vw(500);
 
   @include sp() {
     width: vw_sp(255);
-    height: vw_sp(310);
+    height: vw_sp(280);
     bottom: vw_sp(49);
   }
 }
 
 .fv__text {
-  // fv__innerに対して絶対配置
   position: absolute;
-  top: vw(447);
+  top: vw(440);
   z-index: 1000;
 
   @include sp() {
     top: vw_sp(270);
   }
 }
+
 .fv__title {
   color: $color-brown;
   text-align: left;
-  font-family: $font-family;
 
+  font-family: $font-family;
   font-weight: 800;
-  font-size: vw(30);
+  font-size: vw(36);
   line-height: 160%;
-  letter-spacing: 0.0108em;
   margin-bottom: vw(20);
 
   @include sp() {
@@ -353,11 +317,11 @@
   position: absolute;
   white-space: nowrap;
   color: $color-brown;
+
   font-family: $font-family3;
-  font-size: vw(14);
+  font-size: vw(16);
   font-weight: 600;
   line-height: 160%;
-  letter-spacing: 0.128em;
 
   @include sp() {
     font-size: vw_sp(14);
@@ -368,7 +332,7 @@
 
 .hide-on-sp {
   @include sp() {
-    display: none; // SP版で非表示に設定
+    display: none;
   }
 }
 
@@ -382,6 +346,7 @@
   align-items: center;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: vw(50);
 
   @include sp() {
     width: 100%;
@@ -409,12 +374,10 @@
   font-family: $font-family2;
   font-size: vw(20);
   font-weight: 700;
-  line-height: vw(50);
   margin-bottom: vw(30);
 
   @include sp() {
     font-size: vw_sp(12);
-    line-height: vw_sp(20);
     margin-bottom: vw_sp(30);
   }
 }
@@ -444,13 +407,12 @@
 
 .scene__inner {
   width: vw(1100);
-
+  margin: vw(-50) auto 0 auto;
   align-items: center;
-  margin: 0 auto;
   text-align: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
   }
 }
 
@@ -465,8 +427,7 @@
   gap: vw(25);
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
-  padding-bottom: vw(100);
+  padding: 0 0 vw(100) 0;
 
   @include sp() {
     flex-direction: column;
@@ -482,13 +443,13 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: vw(10) vw(10) vw(10);
-  border-radius: vw(60) vw(60) vw(60) vw(60);
+  padding: vw(10);
+  border-radius: vw(60);
   height: auto;
 
   @include sp() {
-    padding: vw_sp(10) vw_sp(10) vw_sp(10);
-    border-radius: vw_sp(60) vw_sp(60) vw_sp(60) vw_sp(60);
+    padding: vw_sp(10);
+    border-radius: vw_sp(60);
   }
 
   img {
@@ -506,7 +467,7 @@
 .scene__list-item--contents {
   display: flex;
   flex-direction: column;
-
+  text-align: left;
   width: vw(272);
   margin: auto;
 
@@ -519,7 +480,6 @@
   color: $color-pink;
   font-family: $font-family;
   font-size: vw(40);
-
   font-weight: 800;
   line-height: 140%;
 
@@ -535,7 +495,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: vw(1.6);
+  letter-spacing: 0.16em;
 
   @include sp() {
     font-size: vw_sp(20);
@@ -549,14 +509,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: vw(1.12);
-  margin-top: vw(16);
-  margin-bottom: vw(66);
+  letter-spacing: 0.112em;
+  margin: vw(16) 0 vw(66);
 
   @include sp() {
     font-size: vw_sp(14);
-    margin-top: vw_sp(16);
-    margin-bottom: vw_sp(66);
+    margin: vw_sp(16) 0 vw_sp(66);
   }
 }
 
@@ -571,23 +529,19 @@
 
 .voice__inner {
   width: vw(1260);
-  // 右寄せ
   margin-left: auto;
 
   @include sp() {
     padding-top: vw_sp(20);
     width: 100%;
   }
-  // @include sp() {
-  //   width: 100%;
-  // }
 }
 
 .voice__container {
   display: flex;
   padding-top: vw(-200);
   gap: vw(40);
-  padding-bottom: vw(100);
+  height: auto;
 
   @include sp() {
     gap: vw_sp(20);
@@ -598,8 +552,7 @@
 .voice__vertical {
   position: relative;
   display: flex;
-
-  // 縦並び
+  width: vw(180);
   flex-direction: column;
   gap: vw(35);
 
@@ -610,22 +563,22 @@
 
 .arrow-left {
   position: absolute;
-  top: 75%;
+  top: vw(350);
   left: 10%;
   transform: translateY(-50%);
 }
 
 .arrow-right {
   position: absolute;
-  top: 75%;
-  left: 50%;
+  top: vw(350);
+  left: 55%;
   transform: translateY(-50%);
 }
 
 .arrow-cursol {
   cursor: pointer;
-  width: vw(24);
-  height: w(24);
+  width: vw(40);
+  height: vw(40);
 }
 
 .voice__vertical--text {
@@ -641,11 +594,12 @@
 .voice__title {
   writing-mode: vertical-rl;
   color: $color-brown;
-  text-align: center;
+  text-align: start;
   font-family: $font-family;
   font-size: vw(40);
   font-weight: 800;
-  line-height: vw(46);
+  line-height: 115%;
+  letter-spacing: 0.12em;
 
   @include sp() {
     font-size: vw_sp(30);
@@ -664,34 +618,22 @@
   @include sp() {
     font-size: vw_sp(12);
     line-height: vw_sp(50);
-    text-align: left; /* 縦方向の左寄せ */
-    margin: 0;
-    padding: 0;
+    padding-right: vw_sp(5);
   }
 }
 
 .voice__vertical--arrow {
   display: flex;
-  gap: vw(6);
-  // 左右中央揃え
-  justify-content: center;
 
   img {
-    width: vw(33);
-    height: vw(33);
+    width: vw(60);
+    height: vw(60);
   }
 
   @include sp() {
     display: none;
   }
 }
-
-// .voice__vertical--arrow {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: vw(60);
-// }
 
 .voice__container {
   position: relative;
@@ -705,9 +647,7 @@
 }
 
 .voice__slide--card {
-  // 幅伸ばさない、縮めない、指定サイズで表示
   flex: 0 0 auto;
-  // vwだと広がりすぎるのでpx指定とした
   width: vw(290) !important;
   height: auto;
   margin-right: vw(25);
@@ -747,7 +687,7 @@
   font-size: vw(20);
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: vw(1.6);
+  letter-spacing: 0.16em;
 
   @include sp() {
     font-size: vw_sp(20);
@@ -760,7 +700,7 @@
   font-size: vw(14);
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 
   @include sp() {
     font-size: vw_sp(14);
@@ -790,7 +730,7 @@
   text-align: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
   }
 }
 
@@ -802,9 +742,10 @@
 
   @include sp() {
     flex-direction: column;
-    gap: vw_sp(20);
+    gap: vw_sp(30);
     margin: 0 auto;
     align-items: center;
+
     padding-bottom: vw_sp(20);
   }
 }
@@ -816,50 +757,51 @@
   padding: vw(30);
   flex-direction: column;
   align-items: center;
-  gap: vw(30);
+  gap: vw(10);
   border-radius: vw(60);
 
   @include sp() {
     width: vw_sp(330) !important;
     align-items: center;
     border-radius: vw_sp(50);
+    padding: vw_sp(25) vw_sp(30);
+    gap: vw_sp(20);
   }
 }
 
 .information__subtitle {
   @include sp() {
-    margin-bottom: vw_sp(15);
+    margin-bottom: vw_sp(30);
   }
 }
 
 .information__card--title {
   display: flex;
-  background-color: $color-green;
-  // 横並び中央寄せ
   justify-content: center;
-  // 上下中央揃え
   align-items: center;
-  // テキスト中央揃え
   text-align: center;
+  background-color: $color-green;
+  color: $color-white;
+
   width: vw(470);
   height: vw(43);
-  padding: vw(7) vw(122);
+  padding: vw(10) vw(122) vw(7) vw(122);
   border-radius: vw(60);
-  color: $color-white;
+
   font-family: $font-family3;
   font-size: vw(20);
   font-weight: 600;
-  line-height: vw(30);
-  letter-spacing: vw(1.6);
+  line-height: 150%;
+  letter-spacing: 0.16em;
 
   @include sp() {
     width: vw_sp(280);
     height: vw_sp(43);
-    padding: vw_sp(7) vw(122);
+    padding: vw_sp(10) vw(122) vw_sp(7) vw(122);
     border-radius: vw_sp(60);
+
     font-size: vw_sp(20);
-    line-height: vw_sp(15);
-    letter-spacing: vw_sp(1.28);
+    line-height: 150%;
   }
 }
 
@@ -872,18 +814,19 @@
   padding: vw(10) vw(0);
   color: $color-brown;
   text-align: left;
+  border-bottom: 1px solid $color-beige2;
+
   font-family: $font-family3;
-  font-size: vw(12);
+  font-size: vw(16);
   font-weight: 600;
   line-height: vw(24);
-  letter-spacing: 0.0128em;
-  border-bottom: 1px solid $color-beige2;
+  letter-spacing: 0.128em;
 
   @include sp() {
     padding: vw_sp(10) vw(0);
-    font-size: vw_sp(14);
+    font-size: vw_sp(12);
     line-height: 150%;
-    letter-spacing: 0.0128em;
+    letter-spacing: 0.128em;
   }
 }
 
@@ -900,7 +843,7 @@
   font-size: vw(10);
   font-weight: 300;
   line-height: vw(16);
-  letter-spacing: vw(0.8);
+  letter-spacing: 0.128em;
 
   @include sp() {
     font-size: vw_sp(8);
@@ -912,18 +855,26 @@
 .information__card--left {
   vertical-align: middle;
   width: 30%;
+  padding: vw(10);
+
+  @include sp() {
+    padding: vw_sp(10);
+  }
 }
 
 .information__card--right {
   vertical-align: middle;
   width: 70%;
+  padding: vw(10);
+
+  @include sp() {
+    padding: vw_sp(10);
+  }
 }
 
 .information__bottom {
   width: 100%;
 }
-
-// gallery
 
 // gallery
 
@@ -975,15 +926,13 @@
 
 .access__inner {
   width: vw(1100);
+  margin: vw(-50) auto 0 auto;
   align-items: center;
-
-  // 左右中央
-  margin: 0 auto;
   text-align: center;
   padding-bottom: vw(90);
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
     padding-bottom: vw_sp(60);
   }
 }
@@ -991,17 +940,16 @@
 .access__map {
   width: vw(1100);
   margin: 0 auto;
-  // アスペクト比を保持
   aspect-ratio: 16/9;
+  border-radius: vw(40);
+  overflow: hidden;
+  z-index: 1000;
 
   @include sp() {
-    // 左右中央
-    margin: 0 auto;
     width: vw_sp(330);
+    margin: 0 auto;
     aspect-ratio: 9/16;
     border-radius: vw_sp(40);
-    overflow: hidden; /* 角丸を適用 */
-    z-index: 1000;
   }
 }
 
@@ -1016,6 +964,7 @@
 .message {
   background-color: $color-beige;
 }
+
 .message__inner {
   width: vw(1100);
   padding-bottom: vw(50);
@@ -1024,14 +973,13 @@
   text-align: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
     padding-bottom: vw_sp(20);
   }
 }
 
 .message__image {
   width: vw(175);
-  // 左右中央
   margin: 0 auto;
 
   @include sp() {
@@ -1046,18 +994,12 @@
 .message__text {
   padding-top: vw(30);
   width: vw(390);
+  margin: 0 auto;
   height: auto;
-  margin: auto;
-  // display: flex;
-  // justify-content: center; /* 左右中央揃え */
-  // align-items: center; /* 上下中央揃え */
-  // text-align: center; /* テキストの中央揃え */
 
   @include sp() {
     padding-top: vw_sp(30);
     width: vw_sp(330);
-    // 左右中央
-    margin: 0 auto;
   }
 }
 
@@ -1067,7 +1009,7 @@
   font-size: vw(14);
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 
   @include sp() {
     font-size: vw_sp(14);
@@ -1095,7 +1037,7 @@
   align-items: center;
 
   @include sp() {
-    width: 100%;
+    width: vw_sp(330);
   }
 }
 
@@ -1121,7 +1063,6 @@
 
 .footer__sns {
   width: vw(38);
-  // 左右中央
   margin: 0 auto;
 
   @include sp() {
@@ -1151,19 +1092,26 @@
 
 .footer__button {
   margin-bottom: vw(30);
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .footer__button-link {
-  width: vw(329);
   display: flex;
   flex-direction: row;
-  gap: vw(10);
   align-items: center;
   justify-content: center;
+  gap: vw(10);
+
+  width: vw(329);
   padding: vw(41) vw(20);
   background-color: $color-white;
-  text-decoration: none;
   border-radius: vw(30);
+
+  text-decoration: none;
 
   @include sp() {
     width: vw_sp(300);
@@ -1183,6 +1131,7 @@
   @include sp() {
     width: vw_sp(19);
   }
+
   img {
     width: 100%;
   }
@@ -1194,8 +1143,8 @@
   font-size: vw(16);
   font-weight: 800;
   line-height: 1;
+
   align-items: center;
-  // 位置を調整、absoluteは不要
   position: relative;
   top: vw(2);
 
@@ -1208,9 +1157,11 @@
 .footer__copy {
   color: $color-beige;
   text-align: center;
+
   font-family: $font-family3;
   font-size: vw(12);
   font-weight: 250;
+
   margin-bottom: vw(50);
 
   @include sp() {
@@ -1219,7 +1170,6 @@
     margin-bottom: vw_sp(50);
   }
 }
-
 .pagetop {
   position: fixed;
   right: vw(29);
@@ -1227,8 +1177,8 @@
   width: vw(100);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
   z-index: 5000;
+  transition: opacity 0.3s, visibility 0.3s;
 
   @include sp() {
     right: vw_sp(20);

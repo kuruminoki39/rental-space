@@ -457,20 +457,20 @@ svg {
 }
 
 .br-sp {
-  display: none; /* PC向けの改行は初期状態で非表示 */
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .br-sp {
-    display: inline; /* SP向けの改行を表示にする */
+    display: inline;
   }
 }
 
 .br-pc {
-  display: inline; /* PC向けの改行は初期状態で非表示 */
+  display: inline;
 }
 @media screen and (max-width: 768px) {
   .br-pc {
-    display: none; /* SP向けの改行を表示にする */
+    display: none;
   }
 }
 
@@ -485,14 +485,14 @@ svg {
 }
 
 .header__inner {
-  width: 88.8888888889vw;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 88.8888888889vw;
+  margin: auto;
   padding: 0vw;
 }
 @media screen and (max-width: 768px) {
@@ -538,7 +538,6 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 0vw;
-  margin-right: auto;
   margin-right: 9.0277777778vw;
 }
 @media screen and (max-width: 768px) {
@@ -580,6 +579,11 @@ svg {
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 1.1111111111vw;
   font-weight: 800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__nav li:hover {
+  opacity: 0.7;
 }
 
 .header__nav li:nth-child(2) {
@@ -611,20 +615,18 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .header__icon {
-    width: 25vw;
-    height: 25vw;
+    width: 33.3333333333vw;
+    height: 33.3333333333vw;
   }
 }
 
 .fv {
-  padding-top: 5.5555555556vw;
-  padding-bottom: 8.6805555556vw;
+  padding: 5.5555555556vw 0 4.8611111111vw 0;
   background: #f7f3eb;
 }
 @media screen and (max-width: 768px) {
   .fv {
-    padding-top: 13.8888888889vw;
-    padding-bottom: 13.8888888889vw;
+    padding: 13.8888888889vw 0;
   }
 }
 
@@ -636,7 +638,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__inner {
     width: 91.6666666667vw;
-    margin-bottom: 55.5555555556vw;
+    margin-bottom: 41.6666666667vw;
   }
 }
 
@@ -649,7 +651,7 @@ svg {
 @media screen and (max-width: 768px) {
   .fv__swiper {
     max-width: 91.6666666667vw;
-    height: 133.3333333333vw;
+    height: 138.8888888889vw;
     padding: 0 0 13.8888888889vw;
   }
 }
@@ -658,15 +660,15 @@ svg {
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 4.8611111111vw 4.8611111111vw 4.8611111111vw 4.8611111111vw;
+  border-radius: 4.8611111111vw;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   .fv__swiper img {
     width: auto;
-    height: 119.4444444444vw;
-    border-radius: 19.4444444444vw 19.4444444444vw 19.4444444444vw 19.4444444444vw;
+    height: 125vw;
+    border-radius: 19.4444444444vw;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -684,7 +686,7 @@ svg {
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  content: ""; /*contentを空にする*/
+  content: "";
 }
 
 .swiper-pagination {
@@ -693,7 +695,8 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .swiper-pagination {
-    text-align: right;
+    margin-left: 25vw;
+    bottom: 5.5555555556vw !important;
   }
 }
 
@@ -705,6 +708,7 @@ svg {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1 !important;
+  margin: 0 7px !important;
 }
 @media screen and (max-width: 768px) {
   .swiper-pagination-bullet {
@@ -734,19 +738,19 @@ svg {
   left: -1px;
   bottom: 3.4027777778vw;
   z-index: 1000;
-  width: 30.5555555556vw;
+  width: 34.7222222222vw;
 }
 @media screen and (max-width: 768px) {
   .fv__bg {
     width: 70.8333333333vw;
-    height: 86.1111111111vw;
+    height: 77.7777777778vw;
     bottom: 13.6111111111vw;
   }
 }
 
 .fv__text {
   position: absolute;
-  top: 31.0416666667vw;
+  top: 30.5555555556vw;
   z-index: 1000;
 }
 @media screen and (max-width: 768px) {
@@ -760,9 +764,8 @@ svg {
   text-align: left;
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-weight: 800;
-  font-size: 2.0833333333vw;
+  font-size: 2.5vw;
   line-height: 160%;
-  letter-spacing: 0.0108em;
   margin-bottom: 1.3888888889vw;
 }
 @media screen and (max-width: 768px) {
@@ -779,10 +782,9 @@ svg {
   white-space: nowrap;
   color: #3b1800;
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
-  font-size: 0.9722222222vw;
+  font-size: 1.1111111111vw;
   font-weight: 600;
   line-height: 160%;
-  letter-spacing: 0.128em;
 }
 @media screen and (max-width: 768px) {
   .fv__sub-title {
@@ -809,6 +811,7 @@ svg {
           align-items: center;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 3.4722222222vw;
 }
 @media screen and (max-width: 768px) {
   .schedule__inner {
@@ -838,13 +841,11 @@ svg {
   font-family: "Zen Maru Gothic", "Noto sans jp", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 700;
-  line-height: 3.4722222222vw;
   margin-bottom: 2.0833333333vw;
 }
 @media screen and (max-width: 768px) {
   .subtitle {
     font-size: 3.3333333333vw;
-    line-height: 5.5555555556vw;
     margin-bottom: 8.3333333333vw;
   }
 }
@@ -873,15 +874,15 @@ svg {
 
 .scene__inner {
   width: 76.3888888889vw;
+  margin: -3.4722222222vw auto 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .scene__inner {
-    width: 100%;
+    width: 91.6666666667vw;
   }
 }
 
@@ -900,8 +901,7 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 0;
-  padding-bottom: 6.9444444444vw;
+  padding: 0 0 6.9444444444vw 0;
 }
 @media screen and (max-width: 768px) {
   .scene__list {
@@ -932,14 +932,14 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   background: #fff;
-  padding: 0.6944444444vw 0.6944444444vw 0.6944444444vw;
-  border-radius: 4.1666666667vw 4.1666666667vw 4.1666666667vw 4.1666666667vw;
+  padding: 0.6944444444vw;
+  border-radius: 4.1666666667vw;
   height: auto;
 }
 @media screen and (max-width: 768px) {
   .scene__list-item {
-    padding: 2.7777777778vw 2.7777777778vw 2.7777777778vw;
-    border-radius: 16.6666666667vw 16.6666666667vw 16.6666666667vw 16.6666666667vw;
+    padding: 2.7777777778vw;
+    border-radius: 16.6666666667vw;
   }
 }
 .scene__list-item img {
@@ -963,6 +963,7 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
   width: 18.8888888889vw;
   margin: auto;
 }
@@ -992,7 +993,7 @@ svg {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: 0.1111111111vw;
+  letter-spacing: 0.16em;
 }
 @media screen and (max-width: 768px) {
   .scene__list-item--text {
@@ -1007,15 +1008,13 @@ svg {
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0777777778vw;
-  margin-top: 1.1111111111vw;
-  margin-bottom: 4.5833333333vw;
+  letter-spacing: 0.112em;
+  margin: 1.1111111111vw 0 4.5833333333vw;
 }
 @media screen and (max-width: 768px) {
   .scene__list-item--description {
     font-size: 3.8888888889vw;
-    margin-top: 4.4444444444vw;
-    margin-bottom: 18.3333333333vw;
+    margin: 4.4444444444vw 0 18.3333333333vw;
   }
 }
 
@@ -1044,7 +1043,7 @@ svg {
   display: flex;
   padding-top: -13.8888888889vw;
   gap: 2.7777777778vw;
-  padding-bottom: 6.9444444444vw;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
   .voice__container {
@@ -1058,6 +1057,7 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 12.5vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1072,7 +1072,7 @@ svg {
 
 .arrow-left {
   position: absolute;
-  top: 75%;
+  top: 24.3055555556vw;
   left: 10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1080,16 +1080,16 @@ svg {
 
 .arrow-right {
   position: absolute;
-  top: 75%;
-  left: 50%;
+  top: 24.3055555556vw;
+  left: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .arrow-cursol {
   cursor: pointer;
-  width: 1.6666666667vw;
-  height: w(24);
+  width: 2.7777777778vw;
+  height: 2.7777777778vw;
 }
 
 .voice__vertical--text {
@@ -1116,11 +1116,12 @@ svg {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #3b1800;
-  text-align: center;
+  text-align: start;
   font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 2.7777777778vw;
   font-weight: 800;
-  line-height: 3.1944444444vw;
+  line-height: 115%;
+  letter-spacing: 0.12em;
 }
 @media screen and (max-width: 768px) {
   .voice__title {
@@ -1143,9 +1144,7 @@ svg {
   .voice__subtitle {
     font-size: 3.3333333333vw;
     line-height: 13.8888888889vw;
-    text-align: left; /* 縦方向の左寄せ */
-    margin: 0;
-    padding: 0;
+    padding-right: 1.3888888889vw;
   }
 }
 
@@ -1153,14 +1152,10 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.4166666667vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .voice__vertical--arrow img {
-  width: 2.2916666667vw;
-  height: 2.2916666667vw;
+  width: 4.1666666667vw;
+  height: 4.1666666667vw;
 }
 @media screen and (max-width: 768px) {
   .voice__vertical--arrow {
@@ -1232,7 +1227,7 @@ svg {
   font-size: 1.3888888889vw;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: 0.1111111111vw;
+  letter-spacing: 0.16em;
 }
 @media screen and (max-width: 768px) {
   .voice__slide--card-text-title {
@@ -1246,7 +1241,7 @@ svg {
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 }
 @media screen and (max-width: 768px) {
   .voice__slide--card-text-description {
@@ -1283,7 +1278,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .information__inner {
-    width: 100%;
+    width: 91.6666666667vw;
   }
 }
 
@@ -1306,7 +1301,7 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5.5555555556vw;
+    gap: 8.3333333333vw;
     margin: 0 auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1329,7 +1324,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.0833333333vw;
+  gap: 0.6944444444vw;
   border-radius: 4.1666666667vw;
 }
 @media screen and (max-width: 768px) {
@@ -1339,12 +1334,14 @@ svg {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 13.8888888889vw;
+    padding: 6.9444444444vw 8.3333333333vw;
+    gap: 5.5555555556vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .information__subtitle {
-    margin-bottom: 4.1666666667vw;
+    margin-bottom: 8.3333333333vw;
   }
 }
 
@@ -1352,7 +1349,6 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #85c36f;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1360,26 +1356,26 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: #85c36f;
+  color: #fff;
   width: 32.6388888889vw;
   height: 2.9861111111vw;
-  padding: 0.4861111111vw 8.4722222222vw;
+  padding: 0.6944444444vw 8.4722222222vw 0.4861111111vw 8.4722222222vw;
   border-radius: 4.1666666667vw;
-  color: #fff;
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
   font-size: 1.3888888889vw;
   font-weight: 600;
-  line-height: 2.0833333333vw;
-  letter-spacing: 0.1111111111vw;
+  line-height: 150%;
+  letter-spacing: 0.16em;
 }
 @media screen and (max-width: 768px) {
   .information__card--title {
     width: 77.7777777778vw;
     height: 11.9444444444vw;
-    padding: 1.9444444444vw 8.4722222222vw;
+    padding: 2.7777777778vw 8.4722222222vw 1.9444444444vw 8.4722222222vw;
     border-radius: 16.6666666667vw;
     font-size: 5.5555555556vw;
-    line-height: 4.1666666667vw;
-    letter-spacing: 0.3555555556vw;
+    line-height: 150%;
   }
 }
 
@@ -1391,19 +1387,19 @@ svg {
   padding: 0.6944444444vw 0vw;
   color: #3b1800;
   text-align: left;
+  border-bottom: 1px solid #ede2da;
   font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
-  font-size: 0.8333333333vw;
+  font-size: 1.1111111111vw;
   font-weight: 600;
   line-height: 1.6666666667vw;
-  letter-spacing: 0.0128em;
-  border-bottom: 1px solid #ede2da;
+  letter-spacing: 0.128em;
 }
 @media screen and (max-width: 768px) {
   .information__card--text1 {
     padding: 2.7777777778vw 0vw;
-    font-size: 3.8888888889vw;
+    font-size: 3.3333333333vw;
     line-height: 150%;
-    letter-spacing: 0.0128em;
+    letter-spacing: 0.128em;
   }
 }
 
@@ -1422,7 +1418,7 @@ svg {
   font-size: 0.6944444444vw;
   font-weight: 300;
   line-height: 1.1111111111vw;
-  letter-spacing: 0.0555555556vw;
+  letter-spacing: 0.128em;
 }
 @media screen and (max-width: 768px) {
   .information__card--text2 {
@@ -1435,11 +1431,23 @@ svg {
 .information__card--left {
   vertical-align: middle;
   width: 30%;
+  padding: 0.6944444444vw;
+}
+@media screen and (max-width: 768px) {
+  .information__card--left {
+    padding: 2.7777777778vw;
+  }
 }
 
 .information__card--right {
   vertical-align: middle;
   width: 70%;
+  padding: 0.6944444444vw;
+}
+@media screen and (max-width: 768px) {
+  .information__card--right {
+    padding: 2.7777777778vw;
+  }
 }
 
 .information__bottom {
@@ -1498,16 +1506,16 @@ svg {
 
 .access__inner {
   width: 76.3888888889vw;
+  margin: -3.4722222222vw auto 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
   text-align: center;
   padding-bottom: 6.25vw;
 }
 @media screen and (max-width: 768px) {
   .access__inner {
-    width: 100%;
+    width: 91.6666666667vw;
     padding-bottom: 16.6666666667vw;
   }
 }
@@ -1516,15 +1524,16 @@ svg {
   width: 76.3888888889vw;
   margin: 0 auto;
   aspect-ratio: 16/9;
+  border-radius: 2.7777777778vw;
+  overflow: hidden;
+  z-index: 1000;
 }
 @media screen and (max-width: 768px) {
   .access__map {
-    margin: 0 auto;
     width: 91.6666666667vw;
+    margin: 0 auto;
     aspect-ratio: 9/16;
     border-radius: 11.1111111111vw;
-    overflow: hidden; /* 角丸を適用 */
-    z-index: 1000;
   }
 }
 
@@ -1549,7 +1558,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .message__inner {
-    width: 100%;
+    width: 91.6666666667vw;
     padding-bottom: 5.5555555556vw;
   }
 }
@@ -1570,14 +1579,13 @@ svg {
 .message__text {
   padding-top: 2.0833333333vw;
   width: 27.0833333333vw;
+  margin: 0 auto;
   height: auto;
-  margin: auto;
 }
 @media screen and (max-width: 768px) {
   .message__text {
     padding-top: 8.3333333333vw;
     width: 91.6666666667vw;
-    margin: 0 auto;
   }
 }
 
@@ -1587,7 +1595,7 @@ svg {
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%;
-  letter-spacing: 0.0112em;
+  letter-spacing: 0.112em;
 }
 @media screen and (max-width: 768px) {
   .message__text--description {
@@ -1631,7 +1639,7 @@ svg {
 }
 @media screen and (max-width: 768px) {
   .footer__inner {
-    width: 100%;
+    width: 91.6666666667vw;
   }
 }
 
@@ -1692,10 +1700,14 @@ svg {
 
 .footer__button {
   margin-bottom: 2.0833333333vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__button:hover {
+  opacity: 0.5;
 }
 
 .footer__button-link {
-  width: 22.8472222222vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1703,17 +1715,18 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0.6944444444vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 0.6944444444vw;
+  width: 22.8472222222vw;
   padding: 2.8472222222vw 1.3888888889vw;
   background-color: #fff;
-  text-decoration: none;
   border-radius: 2.0833333333vw;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .footer__button-link {
@@ -1788,9 +1801,9 @@ svg {
   width: 6.9444444444vw;
   opacity: 0;
   visibility: hidden;
+  z-index: 5000;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index: 5000;
 }
 @media screen and (max-width: 768px) {
   .pagetop {
