@@ -164,7 +164,7 @@
 
         
        <div class="instagram-feed">
-          <?php echo do_shortcode('[instagram-feed]'); ?>
+          <?php echo do_shortcode('[instagram-feed feed=4]'); ?>
        </div>
     </section>
     <div class="schedule__bottom">
