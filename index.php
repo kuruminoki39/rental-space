@@ -118,20 +118,19 @@
     <div class="fv">
       <div class="fv__inner">
         <div class="fv__swiper swiper">
-          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc3.jpg" alt="" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc2.jpg" alt="" />
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc5.jpg" alt="" />
               </div>
             </div>
           </div>
