@@ -184,9 +184,9 @@
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">01</p>
-              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--text">学習塾やワークショップなど</p>
               <p class="scene__list-item--description">
-                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+                小さいお子様から大人まで英語やそろばんなどの習いごと、セミナー、ワークショップ、講座開催など。長机と椅子をご自由にお使いいただけます。
               </p>
             </div>
           </li>
@@ -196,9 +196,9 @@
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">02</p>
-              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--text">ネイルなどのプライベートサロンとして</p>
               <p class="scene__list-item--description">
-                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+                子育ても落ち着いて空いた時間を活かしたい、自宅以外でやりたい、月に1度や午前中だけ、などご自身の生活スタイルに合わせて気軽にご利用いただけます。
               </p>
             </div>
           </li>
@@ -208,9 +208,9 @@
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">03</p>
-              <p class="scene__list-item--text">テキスト入りますテキスト入りますテキスト入ります</p>
+              <p class="scene__list-item--text">ママサークルや誕生日パーティ、自習など</p>
               <p class="scene__list-item--description">
-                本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります
+               お子様が小さいとお店に長時間滞在するのは気を遣うことありませんか。皆で持ち寄り時間を忘れてママ友とおしゃべり、など一時利用でもご利用いただけます。
               </p>
             </div>
           </li>
