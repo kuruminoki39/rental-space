@@ -401,82 +401,81 @@
 }
 
 .instagram-feed {
-	width: vw(1100);
-	margin: auto;
+  width: vw(1100);
+  margin: auto;
 
-	@include sp() {
-		width: vw_sp(330);
-	}
+  @include sp() {
+    width: vw_sp(330);
+  }
 
-	#sbi_images {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: vw(30) !important;
+  #sbi_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: vw(30) !important;
 
-		@include sp() {
-			gap: vw_sp(10) !important;
-		}
-	}
+    @include sp() {
+      gap: vw_sp(10) !important;
+    }
+  }
 
-	.sbi_item {
-		@include sp() {
-			&:nth-child(n + 9) {
-				display: none;
-			}
-		}
-	}
+  .sbi_item {
+    @include sp() {
+      &:nth-child(n + 9) {
+        display: none;
+      }
+    }
+  }
 
-	.sbi_photo {
-		display: block;
-		width: calc(vw(1100) / 4 - vw(30));
-		height: calc(vw(1100) / 4 - vw(30));
+  .sbi_photo {
+    display: block;
+    width: calc(vw(1100) / 4 - vw(30));
+    height: calc(vw(1100) / 4 - vw(30));
 
-		@include sp() {
-			width: vw_sp(158);
-			height: vw_sp(158);
-		}
+    @include sp() {
+      width: vw_sp(158);
+      height: vw_sp(158);
+    }
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-	.sbi_follow_btn {
-		a {
-			margin: vw(50) auto 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: vw(10);
-			width: vw(329);
-			padding: vw(20) vw(15);
-			background-color: $color-white;
-			border-radius: vw(30);
+  .sbi_follow_btn {
+    a {
+      margin: vw(50) auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: vw(10);
+      width: vw(329);
+      padding: vw(20) vw(15);
+      background-color: $color-white;
+      border-radius: vw(30);
 
-			@include sp() {
-				margin: vw_sp(30) auto 0;
-				padding: vw_sp(10) vw_sp(15);
-				border-radius: vw_sp(30);
+      @include sp() {
+        margin: vw_sp(30) auto 0;
+        padding: vw_sp(10) vw_sp(15);
+        border-radius: vw_sp(30);
         width: vw_sp(150);
-			}
-			span {
-				font-family: $font-family;
-			}
-		}
-	}
+      }
+      span {
+        font-family: $font-family;
+      }
+    }
+  }
 
-	.sbi-screenreader {
-		display: none;
-	}
+  .sbi-screenreader {
+    display: none;
+  }
 
-	svg {
-		display: none;
-	}
+  svg {
+    display: none;
+  }
 }
-
 
 // scene
 .scene {
@@ -573,7 +572,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.016em;
 
   @include sp() {
     font-size: vw_sp(20);
@@ -749,9 +748,15 @@
 
 .voice__slide--card-img {
   width: vw(103);
+  height: vw(103);
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
 
   @include sp() {
     width: vw_sp(103);
+    height: vw_sp(103);
+    border-radius: 50%;
   }
 
   img {
@@ -1057,15 +1062,31 @@
 }
 
 .message__image {
-  width: vw(175);
+  width: vw(170);
+  height: vw(170);
+  border-radius: 50%;
+  overflow: hidden;
   margin: 0 auto;
+  position: relative;
 
   @include sp() {
     width: vw_sp(122);
+    height: vw_sp(122);
   }
 
   img {
-    width: 100%;
+    width: 108%;
+    position: absolute;
+    top: vw(-8.5);
+    left: vw(-7);
+    height: auto;
+    overflow: hidden;
+
+    @include sp() {
+      width: 108%;
+      top: vw_sp(-6);
+      left: vw_sp(-6);
+    }
   }
 }
 

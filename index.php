@@ -7,25 +7,25 @@
     <!-- primary meta tags -->
     <title>タイトル</title>
     
-    <meta name="title" content="タイトル" />
-    <meta name="description" content="キャッチコピー" />
-    <meta property="og:title" content="カード形式で表示されるタイトル" />
-    <meta property="og:description" content="キャッチコピー" />
+    <meta name="title" content="レンタルスペース宝塚 | 習い事やサロン、セミナーに最適" />
+    <meta name="description" content="宝塚／多目的レンタルスペース。サロン、ワークショップ、セミナー、撮影、イベントなどに最適。Wi-Fi完備、まずは見学にお越しください" />
+    <meta property="og:title" content="レンタルスペース宝塚 | 習い事やサロン、セミナーに最適" />
+    <meta property="og:description" content="宝塚／多目的スペース。リーズナブルな料金と快適な環境であらゆる用途に対応します。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="URL" />
     <meta property="og:image" content="webp" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="タイトル" />
-    <meta property="og:description" content="キャッチコピー" />
+    <meta property="og:title" content="レンタルスペース宝塚 | 習い事やサロン、セミナーに最適" />
+    <meta property="og:description" content="宝塚／多目的レンタルスペース。サロン、ワークショップ、セミナー、撮影、イベントなどに最適。Wi-Fi完備、まずは見学にお越しください" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="URL" />
     <meta property="og:image" content="webp" />
 
     <!-- X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="タイトル" />
-    <meta name="twitter:description" content="キャッチコピー" />
+    <meta name="twitter:title" content="レンタルスペース宝塚 | 習い事やサロン、セミナーに最適" />
+    <meta name="twitter:description" content="宝塚／多目的レンタルスペース。サロン、ワークショップ、セミナー、撮影、イベントなどに最適。Wi-Fi完備、まずは見学にお越しください" />
     <meta name="twitter:url" content="URL" />
     <meta name="twitter:image" content="webp" />
 
@@ -38,38 +38,9 @@
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon/XXXX.ico" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/favicon/XXXX.ico" />
 
-    <!-- font -->
+   
 
-    <script>
-      (function (d) {
-        var config = {
-            kitId: "bqs7ccw",
-            // scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
+    
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -118,9 +89,10 @@
     <div class="fv">
       <div class="fv__inner">
         <div class="fv__swiper swiper">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc3.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc5.jpg" alt="" />
               </div>
             </div>
             <div class="swiper-slide">
@@ -130,7 +102,7 @@
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc5.jpg" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc3.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -180,23 +152,23 @@
         <ul class="scene__list">
           <li class="scene__list-item">
             <div class="scene__list-item--picture">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-picture-1.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-1.png" alt="" />
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">01</p>
-              <p class="scene__list-item--text">学習塾やワークショップなど</p>
+              <p class="scene__list-item--text">学習塾やワークショップ、セミナー、音楽教室など</p>
               <p class="scene__list-item--description">
-                小さいお子様から大人まで英語やそろばんなどの習いごと、セミナー、ワークショップ、講座開催など。長机と椅子をご自由にお使いいただけます。
+                小さいお子様から大人まで英語やそろばんなどの習いごと、セミナー、ワークショップ、講座開催など。長机と椅子をご自由にお使いいただけます。<BR><BR>
               </p>
             </div>
           </li>
           <li class="scene__list-item">
             <div class="scene__list-item--picture">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-picture-1.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-2.png" alt="" />
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">02</p>
-              <p class="scene__list-item--text">ネイルなどのプライベートサロンとして</p>
+              <p class="scene__list-item--text">ネイル施術などプライベートサロンとして</p>
               <p class="scene__list-item--description">
                 子育ても落ち着いて空いた時間を活かしたい、自宅以外でやりたい、月に1度や午前中だけ、などご自身の生活スタイルに合わせて気軽にご利用いただけます。
               </p>
@@ -204,7 +176,7 @@
           </li>
           <li class="scene__list-item">
             <div class="scene__list-item--picture">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-picture-1.png" alt="" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/scene/scene-3.png" alt="" />
             </div>
             <div class="scene__list-item--contents">
               <p class="scene__list-item--number">03</p>
@@ -243,136 +215,61 @@
             <div class="voice__slide swiper-wrapper">
               <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.jpg" alt="" />
                 </div>
                 <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
+                  <p class="voice__slide--card-text-title">皆が明るい気持ちになれる癒しの場所</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
+                  【<a href="https://www.instagram.com/shouondou/" target="_blank">正温堂</a>】様<br>知人の紹介で利用を開始、以前利用していたスペースと異なり広さも程よく清潔で、何より物が少ないため犬の誤飲の心配がない点が嬉しいです。前に車1台駐車できるのも便利ですし、明るい雰囲気はお客様からお褒めの言葉をいただくこともしばしば。自分自身も明るい気持ちで施術に取り組めますし、スポットで利用できたり完全入替が可能な点も助かっています。
                   </p>
                 </div>
               </div>
               <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-2.jpg" alt="" />
                 </div>
                 <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
+                  <p class="voice__slide--card-text-title">思い立った時すぐはじめられるのが魅力</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
+                  【<a href="https://www.instagram.com/suiyou.i/" target="_blank">書道教室</a>】様<br>宝塚市内で教室を開きたいと探していたところSNSでこちらを知りました。オーナーさんの印象が良く手頃な価格だったため決めました。生徒募集のサポートや色々な相談に乗っていただき想像以上の使いやすさで満足しています。思い立った時が始めどき。見学時にオーナーさんへイメージを伝えて相談するところから始めてみてください。<br><br>
                   </p>
                 </div>
               </div>
               <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-3.jpg" alt="" />
                 </div>
                 <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
+                  <p class="voice__slide--card-text-title">最初の一歩を踏み出す勇気をくれました</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
+                  【<a href="https://www.instagram.com/tanoshiiyoga.aya/" target="_blank">楽しいヨガ</a>】様<br>いい場所とのご縁がなかった時にInstagramでこちらを知り、オーナーの人柄と融通がきく点などが決め手となり即決しました。サロン以外のことも相談に乗ってもらったり素敵なチラシを作っていただいたりしています。こちらのSNSから予約をいただくこともあり、最初の一歩を踏み出せてよかったと思います。<br><br>
                   </p>
                 </div>
               </div>
               <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-4.jpg" alt="" />
                 </div>
                 <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
+                  <p class="voice__slide--card-text-title">こじんまりから始めるのにぴったり</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
+                  【<a href="https://www.instagram.com/kotonohana_tasuku/" target="_blank">言ノ花</a>】様<br>花屋開業の夢を叶えるため本業が休みの日を有意義に使ってより多くの方に活動を知ってもらうためにどうしたらよいか模索していた頃、たまたま前を通りがかった際に利用者募集中であることを知り、曜日や時間帯の相談がしやすく、気さくなオーナーさんの人柄に触れて利用を即決しました。店舗を持つには早いけど今すぐ始めたい方におすすめです。
+
                   </p>
                 </div>
               </div>
               <div class="voice__slide--card swiper-slide">
                 <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-5.jpg" alt="" />
                 </div>
                 <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
+                  <p class="voice__slide--card-text-title">副業を始めるのにちょうどよかった</p>
                   <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
+                  【<a href="https://www.instagram.com/uta_web000/" target="_blank">me'deru</a>】様<br>セラピストをしていた経験を生かせる副業を始めたいと思っていた頃、たまたま通りがかって利用者募集を知りました。本業が忙しいので月イチペースが限界だなと思って躊躇していたのですが気軽に始めやすい利用料金と月1枠から申し込み可能と知り即決しました。わかりやすい道路沿いなのに静かなのでサロンとしても最適です。
                   </p>
                 </div>
               </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
-              <div class="voice__slide--card swiper-slide">
-                <div class="voice__slide--card-img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/voice/voice-picture-1.png" alt="" />
-                </div>
-                <div class="voice__slide--card-text">
-                  <p class="voice__slide--card-text-title">テキストテキストテキストテキストテキスト</p>
-                  <p class="voice__slide--card-text-description">
-                    本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文本文入ります本文本文入ります本文本文入ります本文
-                  </p>
-                </div>
-              </div>
+         
             </div>
           </div>
         </div>
@@ -443,7 +340,7 @@
                 </tr>
                 <tr class="information__card--text1">
                   <td class="information__card--left">利用人数</td>
-                  <td class="information__card--right">〇〇〇人</td>
+                  <td class="information__card--right">1〜8人程度(用途による)</td>
                 </tr>
                 <tr class="information__card--text1">
                   <td class="information__card--left">設備 (無料)</td>
@@ -624,7 +521,7 @@
         </div>
         <div class="message__text">
           <p class="message__text--description">
-            本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入ります本文入り
+          夫の事務所として使っていたスペースを何かに利用できないかと考え、子ども達の習い事送迎に苦労したことを思い出し、住宅地ということもあり自転車で通える範囲で習い事や体験の場を提供できたらと、地域の「教えたい」と「学びたい」を繋ぐ場所としてレンタルスペース宝塚をスタートしました。子育てや仕事で一時的にスキルを眠らせている方、新しい一歩を踏み出したい方を応援したいという思いで、ただお貸しするだけではなく、利用者様のサービスをより多くの方に知ってもらえるよう生徒募集やチラシ作成など運営面もサポートしています。利用者の方が楽しそうに学んだり活動している姿を見ると本当に嬉しくなりますし、やってよかったと思います。これからも地域の皆さんが気軽に集まり、挑戦できる場を提供していきたいと思っていますので、まずは気軽に見学＆お問い合わせください！
           </p>
         </div>
       </div>
@@ -656,7 +553,7 @@
         </div>
         <!-- footer button -->
         <div class="footer__button">
-          <a href="mailto:example@example.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" target="_blank" class="footer__button-link">
+          <a href="mailto:tonakiryo@gmail.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" target="_blank" class="footer__button-link">
             <div class="footer__button-icon">
               <img src="<?php echo get_template_directory_uri(); ?>/images/footer/form-icon.png" alt="" />
             </div>
