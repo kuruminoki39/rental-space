@@ -31,7 +31,7 @@ const gallerySwiperTop = new Swiper(".gallery__swiper-top", {
   slidesPerView: "auto",
   loop: true,
   speed: 4000,
-
+	allowTouchMove: false,
   autoplay: {
     delay: 0,
   },
@@ -41,8 +41,8 @@ const gallerySwiperBottom = new Swiper(".gallery__swiper-bottom", {
   spaceBetween: 20,
   slidesPerView: "auto",
   loop: true,
-  speed: 6000,
-
+	speed: 6000,
+	allowTouchMove: false,
   autoplay: {
     delay: 0,
     reverseDirection: true,
