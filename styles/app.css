@@ -1102,6 +1102,8 @@ svg {
 
 .scene__bottom {
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .voice {
@@ -1123,9 +1125,11 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: -13.8888888889vw;
+  margin-top: -0.0694444444vw;
   gap: 2.7777777778vw;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .voice__container {
@@ -1354,11 +1358,11 @@ svg {
 
 .information {
   background-color: #85c36f;
+  margin-top: -0.0694444444vw;
 }
 
 .information__inner {
   width: 76.3888888889vw;
-  padding-top: -13.8888888889vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1643,7 +1647,7 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 @media screen and (max-width: 768px) {
   .message__inner {
@@ -1697,7 +1701,7 @@ svg {
 
 .message__text--description {
   color: #3b1800;
-  font-family: "FP-こぶりなゴシック StdN W6", "sans-serif";
+  font-family: "Heisei-Maru-Gothic-std", "Noto sans jp", "sans-serif";
   font-size: 0.9722222222vw;
   font-weight: 300;
   line-height: 140%;
@@ -1925,4 +1929,8 @@ svg {
 .pagetop img {
   width: 100%;
   height: auto;
+}
+
+.fontplus-trial-banner {
+  display: none !important;
 }

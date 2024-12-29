@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- primary meta tags -->
-    <title>タイトル</title>
+    <title>レンタルスペース宝塚</title>
     
     <meta name="title" content="レンタルスペース宝塚 | 習い事やサロン、セミナーに最適" />
     <meta name="description" content="宝塚／多目的レンタルスペース。サロン、ワークショップ、セミナー、撮影、イベントなどに最適。Wi-Fi完備、まずは見学にお越しください" />
@@ -35,8 +35,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap" rel="stylesheet" />
 
     <!-- favicon -->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon/XXXX.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/favicon/XXXX.ico" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/header/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/header/favicon.ico" />
 
    
 
@@ -46,6 +46,17 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/app.css" />
     <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?hBXJ0cIJ9uI%3D&box=me4-P5a0e-I%3D&aa=1&ab=2"></script>
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'bqs7ccw',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+ 
   </head>
   <body>
     <!-- header -->
@@ -77,7 +88,7 @@
         </nav>
       </div>
 
-      <a href="mailto:example@example.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" class="header__icon--link">
+      <a href="mailto:tonakiryo@gmail.com?subject=お問い合わせ&body=こちらにお問い合わせ内容をご記入ください。" class="header__icon--link">
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/header-icon.png" alt="メールフォーム" class="header__icon" data-only-show="pc" />
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/header-icon-sp.png" alt="メールフォーム" class="header__icon" data-only-show="sp" />
       </a>
@@ -90,6 +101,11 @@
       <div class="fv__inner">
         <div class="fv__swiper swiper">
           <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="swiper-slide__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc.jpg" alt="" />
+              </div>
+            </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/fv/fv-pc5.jpg" alt="" />
@@ -135,7 +151,7 @@
 
         
        <div class="instagram-feed">
-          <?php echo do_shortcode('[instagram-feed feed=4]'); ?>
+          <?php echo do_shortcode('[instagram-feed feed=6]'); ?>
        </div>
     </section>
     <div class="schedule__bottom">
@@ -220,7 +236,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">皆が明るい気持ちになれる癒しの場所</p>
                   <p class="voice__slide--card-text-description">
-                  【<a href="https://www.instagram.com/shouondou/" target="_blank">正温堂</a>】様<br>知人の紹介で利用を開始、以前利用していたスペースと異なり広さも程よく清潔で、何より物が少ないため犬の誤飲の心配がない点が嬉しいです。前に車1台駐車できるのも便利ですし、明るい雰囲気はお客様からお褒めの言葉をいただくこともしばしば。自分自身も明るい気持ちで施術に取り組めますし、スポットで利用できたり完全入替が可能な点も助かっています。
+                  【<a href="https://www.instagram.com/shouondou/" target="_blank">正温堂</a>】様<br>知人の紹介で利用開始、以前利用していたスペースと異なり広さも程よく清潔で、何より物が少ないため犬の誤飲の心配がない点が嬉しいです。車1台駐車できるのも便利ですし、明るい雰囲気はお客様からお褒めの言葉をいただくこともしばしば。自分自身も明るい気持ちで施術に取り組めますし、スポットで利用できたり完全入替が可能な点も助かっています。大切なワンコちゃんにいつまでも元気でいてもらいたい飼い主さんにとって頼もしい存在ですね。
                   </p>
                 </div>
               </div>
@@ -231,7 +247,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">思い立った時すぐはじめられるのが魅力</p>
                   <p class="voice__slide--card-text-description">
-                  【<a href="https://www.instagram.com/suiyou.i/" target="_blank">書道教室</a>】様<br>宝塚市内で教室を開きたいと探していたところSNSでこちらを知りました。オーナーさんの印象が良く手頃な価格だったため決めました。生徒募集のサポートや色々な相談に乗っていただき想像以上の使いやすさで満足しています。思い立った時が始めどき。見学時にオーナーさんへイメージを伝えて相談するところから始めてみてください。<br><br>
+                  【<a href="https://www.instagram.com/suiyou.i/" target="_blank">書道教室</a>】様<br>宝塚市内で教室を開きたいと探していたところSNSでこちらを知りました。オーナーさんの印象が良く手頃な価格だったため決めました。生徒募集のサポートや色々な相談に乗っていただき想像以上の使いやすさで満足しています。思い立った時が始めどき。見学時にオーナーさんへイメージを伝えて相談するところから始めてみてください。字を綺麗に書きたい方もさることながら集中力UP効果や、墨の香りを嗅ぐことでリラックス効果もあるそうですよ。
                   </p>
                 </div>
               </div>
@@ -242,7 +258,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">最初の一歩を踏み出す勇気をくれました</p>
                   <p class="voice__slide--card-text-description">
-                  【<a href="https://www.instagram.com/tanoshiiyoga.aya/" target="_blank">楽しいヨガ</a>】様<br>いい場所とのご縁がなかった時にInstagramでこちらを知り、オーナーの人柄と融通がきく点などが決め手となり即決しました。サロン以外のことも相談に乗ってもらったり素敵なチラシを作っていただいたりしています。こちらのSNSから予約をいただくこともあり、最初の一歩を踏み出せてよかったと思います。<br><br>
+                  【<a href="https://www.instagram.com/tanoshiiyoga.aya/" target="_blank">楽しいヨガ</a>】様<br>いい場所とのご縁がなかった時にInstagramでこちらを知り、オーナーの人柄と融通がきく点などが決め手となり即決しました。サロン以外のことも相談に乗ってもらったり素敵なチラシを作っていただいたりしています。こちらのSNSから予約をいただくこともあり、最初の一歩を踏み出せてよかったと思います。チケットは2025年1月以降に使用期限がなくなる予定とのこと、忙しい方でも自分のペースで通うことができますよ。<br><br>
                   </p>
                 </div>
               </div>
@@ -254,6 +270,8 @@
                   <p class="voice__slide--card-text-title">こじんまりから始めるのにぴったり</p>
                   <p class="voice__slide--card-text-description">
                   【<a href="https://www.instagram.com/kotonohana_tasuku/" target="_blank">言ノ花</a>】様<br>花屋開業の夢を叶えるため本業が休みの日を有意義に使ってより多くの方に活動を知ってもらうためにどうしたらよいか模索していた頃、たまたま前を通りがかった際に利用者募集中であることを知り、曜日や時間帯の相談がしやすく、気さくなオーナーさんの人柄に触れて利用を即決しました。店舗を持つには早いけど今すぐ始めたい方におすすめです。
+なんと今年念願の花屋を開店予定だとか。おめでとうございます！<br><br>
+
 
                   </p>
                 </div>
@@ -265,7 +283,7 @@
                 <div class="voice__slide--card-text">
                   <p class="voice__slide--card-text-title">副業を始めるのにちょうどよかった</p>
                   <p class="voice__slide--card-text-description">
-                  【<a href="https://www.instagram.com/uta_web000/" target="_blank">me'deru</a>】様<br>セラピストをしていた経験を生かせる副業を始めたいと思っていた頃、たまたま通りがかって利用者募集を知りました。本業が忙しいので月イチペースが限界だなと思って躊躇していたのですが気軽に始めやすい利用料金と月1枠から申し込み可能と知り即決しました。わかりやすい道路沿いなのに静かなのでサロンとしても最適です。
+                  【<a href="https://www.instagram.com/uta_web000/" target="_blank">me'deru</a>】様<br>セラピスト経験を生かせる副業を始めたいと思っていた頃、たまたま通りがかって利用者募集を知りました。本業が忙しいので月イチペースが限界だなと思って躊躇していたのですが気軽に始めやすい利用料金と月1枠から申し込み可能と知り即決しました。わかりやすい道路沿いなのに静かなのでサロンとしても最適です。施術用ベッド無料貸出しているので見学時にオーナーへご相談ください。<br><br><br>
                   </p>
                 </div>
               </div>
@@ -340,7 +358,7 @@
                 </tr>
                 <tr class="information__card--text1">
                   <td class="information__card--left">利用人数</td>
-                  <td class="information__card--right">1〜8人程度(用途による)</td>
+                  <td class="information__card--right">〜8人程度(用途による)</td>
                 </tr>
                 <tr class="information__card--text1">
                   <td class="information__card--left">設備 (無料)</td>
@@ -521,7 +539,7 @@
         </div>
         <div class="message__text">
           <p class="message__text--description">
-          夫の事務所として使っていたスペースを何かに利用できないかと考え、子ども達の習い事送迎に苦労したことを思い出し、住宅地ということもあり自転車で通える範囲で習い事や体験の場を提供できたらと、地域の「教えたい」と「学びたい」を繋ぐ場所としてレンタルスペース宝塚をスタートしました。子育てや仕事で一時的にスキルを眠らせている方、新しい一歩を踏み出したい方を応援したいという思いで、ただお貸しするだけではなく、利用者様のサービスをより多くの方に知ってもらえるよう生徒募集やチラシ作成など運営面もサポートしています。利用者の方が楽しそうに学んだり活動している姿を見ると本当に嬉しくなりますし、やってよかったと思います。これからも地域の皆さんが気軽に集まり、挑戦できる場を提供していきたいと思っていますので、まずは気軽に見学＆お問い合わせください！
+          夫の事務所として使っていたスペースを何かに利用できないかと考え、子ども達の習い事送迎に苦労したことを思い出し、住宅地ということもあり自転車で通える範囲で習い事や体験の場を提供できたらと、地域の「教えたい」と「学びたい」を繋ぐ場所としてレンタルスペース宝塚をスタートしました。<br><br>子育てや仕事で一時的にスキルを眠らせている方、新しい一歩を踏み出したい方を応援したいという思いで、ただお貸しするだけではなく、利用者様のサービスをより多くの方に知ってもらえるよう生徒募集やチラシ作成など運営面もサポートしています。利用者の方が楽しそうに学んだり活動している姿を見ると本当に嬉しくなりますし、やってよかったと思います。<br><br>これからも地域の皆さんが気軽に集まり、挑戦できる場を提供していきたいと思っていますので、まずは気軽に見学＆お問い合わせください！
           </p>
         </div>
       </div>
@@ -541,7 +559,7 @@
         <!-- footer container -->
         <div class="footer__container">
           <div class="footer__sns">
-            <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/rental_space_takarazuka/" target="_blank" rel="noopener noreferrer">
               <img src="<?php echo get_template_directory_uri(); ?>/images/footer/sns-icon.png" alt="instagram" class="footer__sns" />
             </a>
           </div>
