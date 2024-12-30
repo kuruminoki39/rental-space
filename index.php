@@ -579,7 +579,7 @@
           </a>
         </div>
         <div class="footer__copy">
-          <p class="copyright"><a href="" target="_blank">© 2024 InfoFarm co.,Ltd</a></p>
+          <p class="copyright"><a href="" target="_blank">© 2025 レンタルスペース宝塚</a></p>
         </div>
       </div>
       <a href="#" class="pagetop" id="js-pagetop"><img src="<?php echo get_template_directory_uri(); ?>/images/footer/pagetop.png" alt="" /></a>
