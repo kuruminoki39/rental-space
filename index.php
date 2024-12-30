@@ -73,7 +73,7 @@
               <a href="#scene" class="header__link">ご利用シーン</a>
             </li>
             <li>
-              <a href="#voice" class="header__link">ご利用者様の声</a>
+              <a href="#voice" class="header__link">利用者様の声</a>
             </li>
             <li>
               <a href="#information" class="header__link">料金・設備</a>
